@@ -6,60 +6,134 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #f9fafb;
     color: #333;
+    overflow-x: hidden;
 }
 
 header {
-    background-color:#000000;
+    background-color: #343a40;
     color: #fff;
-    padding: 1.5em;
+    padding: 2rem;
     text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
 header h1 {
     margin: 0;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 1em 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-main {
-    padding: 20px;
+    font-size: 2rem;
+    letter-spacing: 1px;
     max-width: 800px;
     margin: 0 auto;
 }
 
+header p {
+    max-width: 800px;
+    margin: 1rem auto;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #495057;
+    color: #e2e6ea;
+}
+
+main {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    position: relative;
+}
+
+/* Top Right Image */
+.image-container {
+    position: relative;
+    text-align: right; /* Aligns image to the right */
+    padding-right: 20px; /* Adds padding to the right */
+}
+
+.top-right-image {
+    width: 200px; /* Adjust size as needed */
+    height: auto;
+    margin-top: -30px; /* Moves the image lower */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 100; /* Ensure it stays above other elements */
+}
+
 section {
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    
+    /* Adjusting position of section */
+    margin-top: -1rem;  /* Lift the section higher */
 }
 
 footer {
-    background-color: #007bff;
+    background-color: #343a40;
     color: #fff;
     text-align: center;
-    padding: 10px;
+    padding: 1rem 0;
     position: fixed;
     width: 100%;
     bottom: 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 0.9rem;
 }
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    .top-right-image {
+        width: 150px;
+        right: 10px;
+    }
+
+    section {
+        margin-top: 0rem; /* Keep section margin reset for small screens */
+    }
+}
+
