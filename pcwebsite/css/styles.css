@@ -1,57 +1,88 @@
+/* General body styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
     margin: 0;
     padding: 0;
+    background-color: #ffffff; /* White background for the body */
 }
 
+/* Header styles */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
+    background-color: #808080; /* Grey background for the header */
+    padding: 10px 20px;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
     text-align: center;
 }
 
+nav {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main section styles */
 main {
-    max-width: 900px;
-    margin: 20px auto;
     padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2 {
-    margin: 0 0 10px 0;
-}
-
+/* Form section styles */
 .form-section {
-    margin-bottom: 20px;
+    background-color: #000; /* Black background for the form section */
+    color: #fff; /* White text color for readability */
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 0 auto; /* Center the form section */
 }
 
+/* Form group styles */
 .form-group {
     margin-bottom: 15px;
 }
 
-label {
+.form-group label {
     display: block;
-    font-weight: bold;
     margin-bottom: 5px;
+    font-weight: bold;
 }
 
-select {
+.form-group select {
     width: 100%;
     padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ddd;
+    border: none;
     border-radius: 4px;
+    background-color: #333; /* Dark grey background for select boxes */
+    color: #fff; /* White text color */
 }
 
-#total-tdp {
-    font-size: 18px;
-    font-weight: bold;
+/* Submit button styles */
+.form-section button[type="submit"] {
+    display: block;
+    width: 200px;
     padding: 10px;
-    background-color: #e0e0e0;
+    margin: 20px auto;
+    border: none;
     border-radius: 4px;
+    background-color: #007BFF; /* Blue background for the button */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-section button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue for hover effect */
 }
