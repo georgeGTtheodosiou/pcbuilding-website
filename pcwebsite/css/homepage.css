@@ -17,7 +17,7 @@ body {
 }
 
 header {
-    background-color: rgba(52, 58, 64, 0.8); /* Added transparency for readability */
+    background-color: rgba(52, 58, 64, 0.8); /* Grey with transparency */
     color: #fff;
     padding: 2rem;
     text-align: center;
@@ -68,13 +68,12 @@ main {
     padding: 2rem;
     max-width: 900px;
     margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0.9); /* Slight transparency to blend with background */
+    background-color: rgba(255, 255, 255, 0.9); /* White with slight transparency */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     position: relative;
 }
 
-/* Top Right Image */
 .image-container {
     position: relative;
     text-align: right; /* Aligns image to the right */
@@ -93,16 +92,14 @@ main {
 section {
     margin-bottom: 2rem;
     padding: 1.5rem;
-    background-color: rgba(255, 255, 255, 0.9); /* Slight transparency to blend with background */
+    background-color: rgba(52, 58, 64, 0.8); /* Grey with transparency */
     border-radius: 8px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    
-    /* Adjusting position of section */
     margin-top: -1rem;  /* Lift the section higher */
 }
 
 footer {
-    background-color: rgba(52, 58, 64, 0.8); /* Added transparency for readability */
+    background-color: rgba(52, 58, 64, 0.8); /* Grey with transparency */
     color: #fff;
     text-align: center;
     padding: 1rem 0;
