@@ -11,9 +11,9 @@ body {
 
 /* Header styles */
 header {
-    background-color: #808080; /* Grey background for the header */
     padding: 10px 20px;
     color: white;
+    background-color: transparent; /* Transparent background for the header */
 }
 
 header h1 {
@@ -89,6 +89,7 @@ main {
 .form-section button[type="submit"]:hover {
     background-color: #0056b3; /* Darker blue for hover effect */
 }
+
 
 
 
