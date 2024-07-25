@@ -219,37 +219,47 @@
 </div>
 
 
-             <!-- Storage -->
+        <!-- Storage Devices Dropdown -->
 <div class="form-group">
-  <label for="storage">Storage Device:</label>
+  <label for="storage">Select Storage Device:</label>
   <select id="storage" name="storage" aria-label="Select Storage Device">
-    <option value="" disabled selected>Select Storage Device</option>
+    <!-- Default Option -->
+    <option value="" selected disabled>Select Storage Device</option>
+
     <!-- NVMe SSDs -->
-    <option value="Samsung 970 Evo Plus NVMe">Samsung 970 Evo Plus - NVMe SSD, 1TB, PCIe Gen 3</option>
-    <option value="Samsung 980 Pro NVMe">Samsung 980 Pro - NVMe SSD, 1TB, PCIe Gen 4</option>
-    <option value="Western Digital Black SN850">Western Digital Black SN850 - NVMe SSD, 1TB, PCIe Gen 4</option>
-    <option value="Kingston KC3000 NVMe">Kingston KC3000 - NVMe SSD, 1TB, PCIe Gen 4</option>
-    <option value="Crucial P5 Plus NVMe">Crucial P5 Plus - NVMe SSD, 1TB, PCIe Gen 4</option>
+    <optgroup label="NVMe SSDs">
+      <option value="Samsung 970 Evo Plus NVMe">Samsung 970 Evo Plus - 1TB, PCIe Gen 3</option>
+      <option value="Samsung 980 Pro NVMe">Samsung 980 Pro - 1TB, PCIe Gen 4</option>
+      <option value="Western Digital Black SN850">Western Digital Black SN850 - 1TB, PCIe Gen 4</option>
+      <option value="Kingston KC3000 NVMe">Kingston KC3000 - 1TB, PCIe Gen 4</option>
+      <option value="Crucial P5 Plus NVMe">Crucial P5 Plus - 1TB, PCIe Gen 4</option>
+    </optgroup>
 
     <!-- SATA SSDs -->
-    <option value="Samsung 870 Evo SATA">Samsung 870 Evo - SATA SSD, 1TB</option>
-    <option value="Crucial MX500 SATA">Crucial MX500 - SATA SSD, 1TB</option>
-    <option value="Western Digital Blue 3D NAND SATA">Western Digital Blue 3D NAND - SATA SSD, 1TB</option>
-    <option value="Kingston A400 SATA">Kingston A400 - SATA SSD, 960GB</option>
+    <optgroup label="SATA SSDs">
+      <option value="Samsung 870 Evo SATA">Samsung 870 Evo - 1TB</option>
+      <option value="Crucial MX500 SATA">Crucial MX500 - 1TB</option>
+      <option value="Western Digital Blue 3D NAND SATA">Western Digital Blue 3D NAND - 1TB</option>
+      <option value="Kingston A400 SATA">Kingston A400 - 960GB</option>
+    </optgroup>
 
     <!-- HDDs -->
-    <option value="Western Digital Black HDD">Western Digital Black - HDD, 2TB, 7200 RPM</option>
-    <option value="Seagate Barracuda HDD">Seagate Barracuda - HDD, 2TB, 7200 RPM</option>
-    <option value="Toshiba X300 HDD">Toshiba X300 - HDD, 4TB, 7200 RPM</option>
-    <option value="Seagate IronWolf NAS HDD">Seagate IronWolf NAS - HDD, 6TB, 7200 RPM</option>
+    <optgroup label="HDDs">
+      <option value="Western Digital Black HDD">Western Digital Black - 2TB, 7200 RPM</option>
+      <option value="Seagate Barracuda HDD">Seagate Barracuda - 2TB, 7200 RPM</option>
+      <option value="Toshiba X300 HDD">Toshiba X300 - 4TB, 7200 RPM</option>
+      <option value="Seagate IronWolf NAS HDD">Seagate IronWolf NAS - 6TB, 7200 RPM</option>
+    </optgroup>
   </select>
 </div>
 
-		    <!-- Coolers Dropdown -->
+	<!-- Coolers Dropdown -->
 <div class="form-group">
   <label for="cooler">Select Cooler:</label>
   <select id="cooler" name="cooler" aria-label="Select Cooler">
-	  
+    <!-- Default Option -->
+    <option value="" selected disabled>Select Cooler</option>
+
     <!-- Air Coolers -->
     <optgroup label="Air Coolers">
       <option value="Noctua NH-D15">Noctua NH-D15 - Dual Tower, 140mm Fans</option>
@@ -279,6 +289,7 @@
     </optgroup>
   </select>
 </div>
+
 
 
                <!-- PSU -->
