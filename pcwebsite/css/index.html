@@ -365,19 +365,16 @@
   </select>
 </div>
 
-            <section class="calculator-section">
-    <h2>Calculate Total TDP</h2>
-    <div id="total-tdp">Total TDP: 0W</div>
-    
-    <!-- Container for centering the button -->
-    <div class="form-container">
-        <form id="pc-build-form">
-            <!-- CPU, GPU, RAM, motherboard, storage, PSU, and case selections here -->
-            <button type="submit">Submit</button>
-        </form>
-    </div>
-</section>
-
+            </form>
+        </section>
+        <section class="calculator-section">
+            <h2>Calculate Total TDP</h2>
+            <div id="total-tdp">Total TDP: 0W</div>
+		<form id="pc-build-form">
+    <!-- CPU, GPU, RAM, motherboard, storage, PSU, and case selections here -->
+    <button type="submit">Submit</button>
+</form>
+        </section>
     </main>
     <script>
        const cpuTDP = {
@@ -485,11 +482,14 @@
             if (cpu) totalTDP += cpuTDP[cpu] || 0;
             if (gpu) totalTDP += gpuTDP[gpu] || 0;
 
-            document.querySelector('#total-tdp').textContent = `Total TDP: ${totalTDP}W`;
+            document.querySelector('#total-tdp').textContent = Total TDP: ${totalTDP}W;
         }
     </script>
 </body>
 </html>
+
+
+
 
 
 
