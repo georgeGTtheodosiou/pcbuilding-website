@@ -4,6 +4,9 @@ body {
     margin: 0;
     padding: 0;
     background-color: #ffffff; /* White background for the body */
+    background-image: url('https://www.icegif.com/wp-content/uploads/icegif-4383.gif'); /* Background image */
+    background-size: cover; /* Ensures the background image covers the entire body */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
 }
 
 /* Header styles */
@@ -86,3 +89,4 @@ main {
 .form-section button[type="submit"]:hover {
     background-color: #0056b3; /* Darker blue for hover effect */
 }
+
