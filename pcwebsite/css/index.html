@@ -221,16 +221,62 @@
 
              <!-- Storage -->
 <div class="form-group">
-    <label for="storage">Storage:</label>
-    <select id="storage" name="storage">
-        <option value="">Select Storage</option>
-        <option value="256GB SSD">256GB SSD</option>
-        <option value="512GB SSD">512GB SSD</option>
-        <option value="1TB SSD">1TB SSD</option>
-        <option value="2TB SSD">2TB SSD</option>
-        <option value="1TB HDD">1TB HDD</option>
-        <option value="2TB HDD">2TB HDD</option>
-    </select>
+  <label for="storage">Storage Device:</label>
+  <select id="storage" name="storage" aria-label="Select Storage Device">
+    <option value="" disabled selected>Select Storage Device</option>
+    <!-- NVMe SSDs -->
+    <option value="Samsung 970 Evo Plus NVMe">Samsung 970 Evo Plus - NVMe SSD, 1TB, PCIe Gen 3</option>
+    <option value="Samsung 980 Pro NVMe">Samsung 980 Pro - NVMe SSD, 1TB, PCIe Gen 4</option>
+    <option value="Western Digital Black SN850">Western Digital Black SN850 - NVMe SSD, 1TB, PCIe Gen 4</option>
+    <option value="Kingston KC3000 NVMe">Kingston KC3000 - NVMe SSD, 1TB, PCIe Gen 4</option>
+    <option value="Crucial P5 Plus NVMe">Crucial P5 Plus - NVMe SSD, 1TB, PCIe Gen 4</option>
+
+    <!-- SATA SSDs -->
+    <option value="Samsung 870 Evo SATA">Samsung 870 Evo - SATA SSD, 1TB</option>
+    <option value="Crucial MX500 SATA">Crucial MX500 - SATA SSD, 1TB</option>
+    <option value="Western Digital Blue 3D NAND SATA">Western Digital Blue 3D NAND - SATA SSD, 1TB</option>
+    <option value="Kingston A400 SATA">Kingston A400 - SATA SSD, 960GB</option>
+
+    <!-- HDDs -->
+    <option value="Western Digital Black HDD">Western Digital Black - HDD, 2TB, 7200 RPM</option>
+    <option value="Seagate Barracuda HDD">Seagate Barracuda - HDD, 2TB, 7200 RPM</option>
+    <option value="Toshiba X300 HDD">Toshiba X300 - HDD, 4TB, 7200 RPM</option>
+    <option value="Seagate IronWolf NAS HDD">Seagate IronWolf NAS - HDD, 6TB, 7200 RPM</option>
+  </select>
+</div>
+
+		    <!-- Coolers Dropdown -->
+<div class="form-group">
+  <label for="cooler">Select Cooler:</label>
+  <select id="cooler" name="cooler" aria-label="Select Cooler">
+    <!-- Air Coolers -->
+    <optgroup label="Air Coolers">
+      <option value="Noctua NH-D15">Noctua NH-D15 - Dual Tower, 140mm Fans</option>
+      <option value="Cooler Master Hyper 212 RGB">Cooler Master Hyper 212 RGB - Single Tower, 120mm Fan</option>
+      <option value="Be Quiet! Dark Rock Pro 4">Be Quiet! Dark Rock Pro 4 - Dual Tower, 135mm Fan</option>
+      <option value="Cryorig R1 Ultimate">Cryorig R1 Ultimate - Dual Tower, 140mm Fans</option>
+      <option value="Thermalright Macho Rev.B">Thermalright Macho Rev.B - Single Tower, 140mm Fan</option>
+      <option value="Scythe Fuma 3">Scythe Fuma 3 - Dual Tower, 120mm Fans</option>
+    </optgroup>
+
+    <!-- Water Coolers -->
+    <optgroup label="Water Coolers">
+      <option value="Corsair iCUE H150i Elite Capellix">Corsair iCUE H150i Elite Capellix - 360mm Radiator, RGB</option>
+      <option value="NZXT Kraken Z73">NZXT Kraken Z73 - 360mm Radiator, RGB, LCD Display</option>
+      <option value="Arctic Liquid Freezer II 360">Arctic Liquid Freezer II 360 - 360mm Radiator, Integrated VRM Fan</option>
+      <option value="EVGA CLC 280">EVGA CLC 280 - 280mm Radiator, RGB</option>
+      <option value="Thermaltake Floe Riing RGB 360 TT">Thermaltake Floe Riing RGB 360 TT - 360mm Radiator, RGB</option>
+      <option value="Deepcool Castle 360EX">Deepcool Castle 360EX - 360mm Radiator, RGB</option>
+    </optgroup>
+
+    <!-- Custom Loop Solutions -->
+    <optgroup label="Custom Loop Solutions">
+      <option value="EKWB Custom Loop Kit S360">EKWB Custom Loop Kit S360 - Complete Kit with 360mm Radiator</option>
+      <option value="Corsair Hydro X Series">Corsair Hydro X Series - Custom Loop Components</option>
+      <option value="Thermaltake Pacific C360 DDC">Thermaltake Pacific C360 DDC - Hard Tube Water Cooling Kit</option>
+      <option value="Alphacool Eisbaer Extreme">Alphacool Eisbaer Extreme - Customizable Loop System</option>
+    </optgroup>
+  </select>
 </div>
 
 
