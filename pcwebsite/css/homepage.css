@@ -8,7 +8,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    background-color: #f9fafb;
+    background-color: #f9fafb; /* Slightly off-white to match more natural white tones */
     color: #333;
     overflow-x: hidden;
 }
@@ -65,7 +65,7 @@ main {
     padding: 2rem;
     max-width: 900px;
     margin: 0 auto;
-    background-color: #ffffff;
+    background-color: #ffffff; /* Changed to match the image's white */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     position: relative;
@@ -90,7 +90,7 @@ main {
 section {
     margin-bottom: 2rem;
     padding: 1.5rem;
-    background-color: #f4f4f4;
+    background-color: #ffffff; /* Ensure sections also match image white */
     border-radius: 8px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     
@@ -131,6 +131,12 @@ footer {
         width: 150px;
         right: 10px;
     }
+
+    section {
+        margin-top: 0rem; /* Keep section margin reset for small screens */
+    }
+}
+
 
     section {
         margin-top: 0rem; /* Keep section margin reset for small screens */
