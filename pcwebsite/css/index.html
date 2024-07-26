@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Build Your Own PC</title>
+<title>Stylish Form with Dark Mode</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
- <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet">
 </head>
 <body>
+	<!-- Dark mode toggle -->
+    <button id="dark-mode-toggle" style="position: fixed; top: 10px; right: 10px; padding: 10px; border-radius: 5px; border: none; background-color: #007BFF; color: white; cursor: pointer;">
+        Toggle Dark Mode
+    </button>
+
     <header>
 	<nav>
 	<a href="homepage.html">Home</a>
@@ -485,6 +491,13 @@
 
             document.querySelector('#total-tdp').textContent = Total TDP: ${totalTDP}W;
         }
+    </script>
+	 <script>
+        // JavaScript to toggle dark mode
+        const toggleButton = document.getElementById('dark-mode-toggle');
+        toggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
     </script>
 </body>
 </html>
