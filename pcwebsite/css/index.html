@@ -24,7 +24,7 @@
         <section class="form-section">
             <h2>Select Your Components</h2>
             <form>
-                <!-- CPU -->
+                 <!-- CPU -->
                 <div class="form-group">
                     <label for="cpu">CPU:</label>
                     <select id="cpu" name="cpu">
@@ -370,8 +370,7 @@
     <option value="NZXT H510 Elite">NZXT H510 Elite</option>
   </select>
 </div>
-
-            </form>
+                     </form>
         </section>
         <section class="calculator-section">
             <h2>Calculate Total TDP</h2>
@@ -489,12 +488,61 @@
             if (gpu) totalTDP += gpuTDP[gpu] || 0;
 
             document.querySelector('#total-tdp').textContent = Total TDP: ${totalTDP}W;
-        }
-    </script>
-	 <script>
-        const toggleButton = document.getElementById('dark-mode-toggle');
-        toggleButton.addEventListener('click', () => {
+
+                <!-- Compatibility Check Button -->
+                <div class="form-group">
+                    <button type="button" id="check-compatibility">Check Compatibility</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Compatibility result section -->
+        <section id="compatibility-result" class="hidden">
+            <h2>Compatibility Check Result</h2>
+            <p id="compatibility-message"></p>
+        </section>
+    </main>
+
+    <script>
+        // Toggle dark mode
+        const toggleDarkMode = document.getElementById('dark-mode-toggle');
+        toggleDarkMode.addEventListener('click', () => {
             document.body.classList.toggle('dark-mode');
+        });
+
+        // Compatibility check function
+        document.getElementById('check-compatibility').addEventListener('click', () => {
+            const cpu = document.getElementById('cpu').value;
+            const gpu = document.getElementById('gpu').value;
+            const ram = document.getElementById('ram').value;
+            const storage = document.getElementById('storage').value;
+            const motherboard = document.getElementById('motherboard').value;
+            const caseType = document.getElementById('case').value;
+            const resultSection = document.getElementById('compatibility-result');
+            const message = document.getElementById('compatibility-message');
+
+            // Compatibility logic (simplified example)
+            let compatible = true;
+            let incompatibleParts = [];
+
+            // Example compatibility checks
+            if (cpu === 'AMD Ryzen 5 5600X' && motherboard !== 'ASUS ROG Strix B550-F') {
+                compatible = false;
+                incompatibleParts.push('AMD Ryzen 5 5600X with ' + motherboard);
+            }
+
+            if (gpu === 'NVIDIA GeForce RTX 3080' && caseType !== 'NZXT H510') {
+                compatible = false;
+                incompatibleParts.push('NVIDIA GeForce RTX 3080 with ' + caseType);
+            }
+
+            if (compatible) {
+                message.textContent = 'All selected components are compatible.';
+            } else {
+                message.textContent = `The following components are not compatible: ${incompatibleParts.join(', ')}.`;
+            }
+
+            resultSection.classList.remove('hidden');
         });
     </script>
 </body>
