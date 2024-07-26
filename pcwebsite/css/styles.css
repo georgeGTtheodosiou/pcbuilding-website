@@ -1,24 +1,26 @@
 /* General body styles */
 body {
-    font-family: 'Roboto', sans-serif; /* Updated font for a more modern look */
+    font-family: 'Poppins', sans-serif; /* Modern font for a clean look */
     margin: 0;
     padding: 0;
-    background-color: #f7f7f7; /* Soft grey background for the body */
-    background: linear-gradient(135deg, #e3f2fd, #bbdefb); /* Light blue gradient for a calm feel */
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #333; /* Dark grey text color for contrast */
-    line-height: 1.6; /* Improve readability */
+    background-color: #f2f4f8; /* Soft background color for a subtle contrast */
+    background: linear-gradient(135deg, #e0eafc, #cfdef3); /* Soft gradient background */
+    color: #333; /* Dark grey text for readability */
+    line-height: 1.6; /* Improved line height for better readability */
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 /* Header styles */
 header {
     padding: 20px 0;
     color: #fff;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for the header */
-    backdrop-filter: blur(8px); /* Blur effect behind the header */
+    background-color: rgba(0, 123, 255, 0.9); /* Semi-transparent blue background */
     text-align: center;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for the header */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for header */
+    position: sticky; /* Make header sticky */
+    top: 0; /* Position header at the top */
+    z-index: 1000; /* Ensure header is on top */
+    backdrop-filter: blur(5px); /* Add blur effect behind the header */
 }
 
 header h1 {
@@ -36,89 +38,121 @@ nav a {
     color: #fff;
     text-decoration: none;
     margin: 0 15px;
-    font-weight: bold;
-    padding: 5px 10px;
-    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth color transition */
-    border-radius: 4px; /* Rounded corners */
+    font-weight: 500;
+    padding: 8px 16px; /* Added padding for larger clickable area */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+    border-radius: 5px; /* Rounded corners */
+    display: inline-block; /* Ensure padding applies correctly */
 }
 
 nav a:hover {
-    color: #333; /* Dark text on hover */
+    color: #007BFF; /* Blue text on hover */
     background-color: #fff; /* White background on hover */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Slight shadow on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Slight shadow on hover */
 }
 
 /* Main section styles */
 main {
     padding: 40px 20px;
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
-    text-align: center; /* Center text alignment */
+    text-align: center; /* Center align text */
+    color: #555; /* Softer text color */
 }
 
 /* Form section styles */
 .form-section {
-    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
-    color: #333; /* Dark grey text color for readability */
-    padding: 30px;
-    border-radius: 12px; /* Larger rounded corners for a softer look */
+    background-color: #ffffff; /* Pure white background */
+    color: #333; /* Dark grey text color */
+    padding: 40px;
+    border-radius: 12px; /* Larger rounded corners for a modern look */
     max-width: 600px;
-    margin: 30px auto; /* Center the form section with top margin */
+    margin: 40px auto; /* Center the form section with a top margin */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-    backdrop-filter: blur(8px); /* Add a blur effect behind the form */
     transition: transform 0.3s ease; /* Smooth transformation on hover */
+    backdrop-filter: blur(10px); /* Add a subtle blur effect */
 }
 
 .form-section:hover {
-    transform: translateY(-5px); /* Slight upward movement on hover */
+    transform: translateY(-8px); /* More pronounced upward movement on hover */
 }
 
-/* Form group styles */
+.form-section h2 {
+    margin-bottom: 20px;
+    font-size: 1.8em; /* Slightly larger heading */
+    color: #007BFF; /* Blue color for heading */
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
 .form-group {
     margin-bottom: 20px; /* Increased spacing between form elements */
+    text-align: left; /* Align form labels and inputs to the left */
 }
 
 .form-group label {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
-    font-size: 1.1em; /* Slightly larger font size for labels */
+    font-size: 1.1em; /* Larger font size for labels */
     color: #555; /* Medium grey for a softer look */
 }
 
 .form-group select {
     width: 100%;
     padding: 12px;
-    border: 1px solid #ddd; /* Light border for better contrast */
-    border-radius: 6px; /* Rounded corners */
-    background-color: #f7f7f7; /* Light grey background for select boxes */
+    border: 1px solid #ddd; /* Light border for contrast */
+    border-radius: 8px; /* Rounded corners for select box */
+    background-color: #f9f9f9; /* Very light grey background */
     color: #333;
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Inner shadow for input depth */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Inner shadow for depth */
     transition: border-color 0.3s ease; /* Smooth border color transition */
+    font-size: 1em; /* Ensure font size consistency */
 }
 
 .form-group select:focus {
     border-color: #007BFF; /* Blue border on focus */
     outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add glow on focus */
 }
 
 /* Submit button styles */
 .form-section button[type="submit"] {
     display: block;
-    width: 250px; /* Increased width */
-    padding: 15px; /* Increased padding */
+    width: 100%; /* Full width for a modern look */
+    max-width: 250px; /* Max width to prevent excessive stretching */
+    padding: 15px;
     margin: 20px auto;
     border: none;
-    border-radius: 6px; /* Slightly increased border-radius for a more prominent look */
-    background-color: #007BFF; /* Blue background for the button */
+    border-radius: 8px; /* Larger border-radius for a smoother look */
+    background-color: #007BFF; /* Blue background */
     color: white;
-    font-size: 18px; /* Increased font size */
+    font-size: 18px; /* Larger font size */
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition effects */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for button */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for button */
 }
 
 .form-section button[type="submit"]:hover {
     background-color: #0056b3; /* Darker blue for hover effect */
     transform: translateY(-3px); /* Slight upward movement on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25); /* Increased shadow on hover */
 }
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em; /* Smaller font size for smaller screens */
+    }
+    nav a {
+        margin: 0 10px; /* Reduced margin */
+    }
+    .form-section {
+        padding: 20px; /* Reduced padding */
+        margin: 20px auto; /* Reduced margin */
+    }
+    .form-section h2 {
+        font-size: 1.5em; /* Smaller heading size */
+    }
+}
+
