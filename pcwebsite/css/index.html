@@ -23,92 +23,145 @@
     <main>
         <section class="form-section">
             <h2>Select Your Components</h2>
-            <form>
-                 <!-- CPU -->
+            <form id="pc-build-form">
+                <!-- CPU -->
                 <div class="form-group">
                     <label for="cpu">CPU:</label>
                     <select id="cpu" name="cpu">
                         <option value="">Select a CPU</option>
+                        <!-- AM4 CPUs -->
+<optgroup label="AM4 CPUs">
+    <!-- Ryzen 1000 Series -->
+    <optgroup label="Ryzen 1000 Series">
+        <option value="AMD Ryzen 3 1200">AMD Ryzen 3 1200 (4C/4T, 10MB, 3.1GHz, 3.4GHz, 65W)</option>
+        <option value="AMD Ryzen 3 1300X">AMD Ryzen 3 1300X (4C/4T, 10MB, 3.5GHz, 3.7GHz, 95W)</option>
+        <option value="AMD Ryzen 5 1400">AMD Ryzen 5 1400 (4C/8T, 8MB, 3.2GHz, 3.4GHz, 65W)</option>
+        <option value="AMD Ryzen 5 1500X">AMD Ryzen 5 1500X (4C/8T, 8MB, 3.5GHz, 3.7GHz, 95W)</option>
+        <option value="AMD Ryzen 5 1600">AMD Ryzen 5 1600 (6C/12T, 19MB, 3.2GHz, 3.6GHz, 65W)</option>
+        <option value="AMD Ryzen 5 1600X">AMD Ryzen 5 1600X (6C/12T, 19MB, 3.6GHz, 4.0GHz, 95W)</option>
+        <option value="AMD Ryzen 7 1700">AMD Ryzen 7 1700 (8C/16T, 20MB, 3.0GHz, 3.7GHz, 65W)</option>
+        <option value="AMD Ryzen 7 1700X">AMD Ryzen 7 1700X (8C/16T, 20MB, 3.4GHz, 3.8GHz, 95W)</option>
+        <option value="AMD Ryzen 7 1800X">AMD Ryzen 7 1800X (8C/16T, 20MB, 3.6GHz, 4.0GHz, 95W)</option>
+    </optgroup>
 
-                        <!-- Ryzen 1000 Series -->
-                        <optgroup label="Ryzen 1000 Series">
-                            <option value="AMD Ryzen 3 1200">AMD Ryzen 3 1200 (4C/4T, 10MB, 3.1GHz, 3.4GHz, 65W)</option>
-                            <option value="AMD Ryzen 3 1300X">AMD Ryzen 3 1300X (4C/4T, 10MB, 3.5GHz, 3.7GHz, 95W)</option>
-                            <option value="AMD Ryzen 5 1400">AMD Ryzen 5 1400 (4C/8T, 8MB, 3.2GHz, 3.4GHz, 65W)</option>
-                            <option value="AMD Ryzen 5 1500X">AMD Ryzen 5 1500X (4C/8T, 8MB, 3.5GHz, 3.7GHz, 95W)</option>
-                            <option value="AMD Ryzen 5 1600">AMD Ryzen 5 1600 (6C/12T, 19MB, 3.2GHz, 3.6GHz, 65W)</option>
-                            <option value="AMD Ryzen 5 1600X">AMD Ryzen 5 1600X (6C/12T, 19MB, 3.6GHz, 4.0GHz, 95W)</option>
-                            <option value="AMD Ryzen 7 1700">AMD Ryzen 7 1700 (8C/16T, 20MB, 3.0GHz, 3.7GHz, 65W)</option>
-                            <option value="AMD Ryzen 7 1700X">AMD Ryzen 7 1700X (8C/16T, 20MB, 3.4GHz, 3.8GHz, 95W)</option>
-                            <option value="AMD Ryzen 7 1800X">AMD Ryzen 7 1800X (8C/16T, 20MB, 3.6GHz, 4.0GHz, 95W)</option>
-                        </optgroup>
+    <!-- Ryzen 2000 Series -->
+    <optgroup label="Ryzen 2000 Series">
+        <option value="AMD Ryzen 3 2200G">AMD Ryzen 3 2200G (4C/4T, 6MB, 3.5GHz, 3.7GHz, 65W)</option>
+        <option value="AMD Ryzen 3 2300X">AMD Ryzen 3 2300X (4C/8T, 10MB, 3.5GHz, 4.0GHz, 95W)</option>
+        <option value="AMD Ryzen 5 2400G">AMD Ryzen 5 2400G (4C/8T, 11MB, 3.6GHz, 3.9GHz, 65W)</option>
+        <option value="AMD Ryzen 5 2500X">AMD Ryzen 5 2500X (6C/12T, 19MB, 3.6GHz, 4.0GHz, 95W)</option>
+        <option value="AMD Ryzen 5 2600">AMD Ryzen 5 2600 (6C/12T, 19MB, 3.4GHz, 3.9GHz, 65W)</option>
+        <option value="AMD Ryzen 5 2600X">AMD Ryzen 5 2600X (6C/12T, 19MB, 3.6GHz, 4.2GHz, 95W)</option>
+        <option value="AMD Ryzen 7 2700">AMD Ryzen 7 2700 (8C/16T, 36MB, 3.2GHz, 4.1GHz, 65W)</option>
+        <option value="AMD Ryzen 7 2700X">AMD Ryzen 7 2700X (8C/16T, 36MB, 3.7GHz, 4.3GHz, 105W)</option>
+    </optgroup>
 
-                        <!-- Ryzen 2000 Series -->
-                        <optgroup label="Ryzen 2000 Series">
-                            <option value="AMD Ryzen 3 2200G">AMD Ryzen 3 2200G (4C/4T, 6MB, 3.5GHz, 3.7GHz, 65W)</option>
-                            <option value="AMD Ryzen 3 2300X">AMD Ryzen 3 2300X (4C/8T, 10MB, 3.5GHz, 4.0GHz, 95W)</option>
-                            <option value="AMD Ryzen 5 2400G">AMD Ryzen 5 2400G (4C/8T, 11MB, 3.6GHz, 3.9GHz, 65W)</option>
-                            <option value="AMD Ryzen 5 2500X">AMD Ryzen 5 2500X (6C/12T, 19MB, 3.6GHz, 4.0GHz, 95W)</option>
-                            <option value="AMD Ryzen 5 2600">AMD Ryzen 5 2600 (6C/12T, 19MB, 3.4GHz, 3.9GHz, 65W)</option>
-                            <option value="AMD Ryzen 5 2600X">AMD Ryzen 5 2600X (6C/12T, 19MB, 3.6GHz, 4.2GHz, 95W)</option>
-                            <option value="AMD Ryzen 7 2700">AMD Ryzen 7 2700 (8C/16T, 36MB, 3.2GHz, 4.1GHz, 65W)</option>
-                            <option value="AMD Ryzen 7 2700X">AMD Ryzen 7 2700X (8C/16T, 36MB, 3.7GHz, 4.3GHz, 105W)</option>
-                        </optgroup>
+    <!-- Ryzen 3000 Series -->
+    <optgroup label="Ryzen 3000 Series">
+        <option value="AMD Ryzen 3 3100">AMD Ryzen 3 3100 (4C/8T, 18MB, 3.6GHz, 3.9GHz, 65W)</option>
+        <option value="AMD Ryzen 3 3300X">AMD Ryzen 3 3300X (4C/8T, 18MB, 3.8GHz, 4.3GHz, 65W)</option>
+        <option value="AMD Ryzen 5 3400G">AMD Ryzen 5 3400G (4C/8T, 12MB, 3.7GHz, 4.2GHz, 65W)</option>
+        <option value="AMD Ryzen 5 3600">AMD Ryzen 5 3600 (6C/12T, 35MB, 3.6GHz, 4.2GHz, 65W)</option>
+        <option value="AMD Ryzen 5 3600X">AMD Ryzen 5 3600X (6C/12T, 35MB, 3.8GHz, 4.4GHz, 95W)</option>
+        <option value="AMD Ryzen 5 3600XT">AMD Ryzen 5 3600XT (6C/12T, 35MB, 3.8GHz, 4.5GHz, 95W)</option>
+        <option value="AMD Ryzen 7 3700X">AMD Ryzen 7 3700X (8C/16T, 36MB, 3.6GHz, 4.4GHz, 65W)</option>
+        <option value="AMD Ryzen 7 3800X">AMD Ryzen 7 3800X (8C/16T, 36MB, 3.9GHz, 4.5GHz, 105W)</option>
+        <option value="AMD Ryzen 7 3800XT">AMD Ryzen 7 3800XT (8C/16T, 36MB, 3.9GHz, 4.7GHz, 105W)</option>
+        <option value="AMD Ryzen 9 3900X">AMD Ryzen 9 3900X (12C/24T, 70MB, 3.8GHz, 4.6GHz, 105W)</option>
+        <option value="AMD Ryzen 9 3950X">AMD Ryzen 9 3950X (16C/32T, 72MB, 3.5GHz, 4.7GHz, 105W)</option>
+    </optgroup>
 
-                        <!-- Ryzen 3000 Series -->
-                        <optgroup label="Ryzen 3000 Series">
-                            <option value="AMD Ryzen 3 3100">AMD Ryzen 3 3100 (4C/8T, 18MB, 3.6GHz, 3.9GHz, 65W)</option>
-                            <option value="AMD Ryzen 3 3300X">AMD Ryzen 3 3300X (4C/8T, 18MB, 3.8GHz, 4.3GHz, 65W)</option>
-                            <option value="AMD Ryzen 5 3400G">AMD Ryzen 5 3400G (4C/8T, 12MB, 3.7GHz, 4.2GHz, 65W)</option>
-                            <option value="AMD Ryzen 5 3600">AMD Ryzen 5 3600 (6C/12T, 35MB, 3.6GHz, 4.2GHz, 65W)</option>
-                            <option value="AMD Ryzen 5 3600X">AMD Ryzen 5 3600X (6C/12T, 35MB, 3.8GHz, 4.4GHz, 95W)</option>
-                            <option value="AMD Ryzen 5 3600XT">AMD Ryzen 5 3600XT (6C/12T, 35MB, 3.8GHz, 4.5GHz, 95W)</option>
-                            <option value="AMD Ryzen 7 3700X">AMD Ryzen 7 3700X (8C/16T, 36MB, 3.6GHz, 4.4GHz, 65W)</option>
-                            <option value="AMD Ryzen 7 3800X">AMD Ryzen 7 3800X (8C/16T, 36MB, 3.9GHz, 4.5GHz, 105W)</option>
-                            <option value="AMD Ryzen 7 3800XT">AMD Ryzen 7 3800XT (8C/16T, 36MB, 3.9GHz, 4.7GHz, 105W)</option>
-                            <option value="AMD Ryzen 9 3900X">AMD Ryzen 9 3900X (12C/24T, 70MB, 3.8GHz, 4.6GHz, 105W)</option>
-                            <option value="AMD Ryzen 9 3950X">AMD Ryzen 9 3950X (16C/32T, 72MB, 3.5GHz, 4.7GHz, 105W)</option>
-                        </optgroup>
+    <!-- Ryzen 4000 Series -->
+    <optgroup label="Ryzen 4000 Series">
+        <option value="AMD Ryzen 3 4100">AMD Ryzen 3 4100 (4C/8T, 19MB, 3.8GHz, 4.4GHz, 65W)</option>
+        <option value="AMD Ryzen 5 4600G">AMD Ryzen 5 4600G (6C/12T, 19MB, 3.7GHz, 4.2GHz, 65W)</option>
+        <option value="AMD Ryzen 5 4650G">AMD Ryzen 5 4650G (6C/12T, 19MB, 3.8GHz, 4.4GHz, 65W)</option>
+        <option value="AMD Ryzen 7 4700G">AMD Ryzen 7 4700G (8C/16T, 20MB, 3.6GHz, 4.4GHz, 65W)</option>
+        <option value="AMD Ryzen 7 4800U">AMD Ryzen 7 4800U (8C/16T, 20MB, 1.8GHz, 4.4GHz, 15W)</option>
+    </optgroup>
 
-                        <!-- Ryzen 4000 Series -->
-                        <optgroup label="Ryzen 4000 Series">
-                            <option value="AMD Ryzen 3 4100">AMD Ryzen 3 4100 (4C/8T, 19MB, 3.8GHz, 4.4GHz, 65W)</option>
-                            <option value="AMD Ryzen 5 4600G">AMD Ryzen 5 4600G (6C/12T, 19MB, 3.7GHz, 4.2GHz, 65W)</option>
-                            <option value="AMD Ryzen 5 4650G">AMD Ryzen 5 4650G (6C/12T, 19MB, 3.8GHz, 4.4GHz, 65W)</option>
-                            <option value="AMD Ryzen 7 4700G">AMD Ryzen 7 4700G (8C/16T, 20MB, 3.6GHz, 4.4GHz, 65W)</option>
-                            <option value="AMD Ryzen 7 4800U">AMD Ryzen 7 4800U (8C/16T, 20MB, 1.8GHz, 4.4GHz, 15W)</option>
-                        </optgroup>
+    <!-- Ryzen 5000 Series -->
+    <optgroup label="Ryzen 5000 Series">
+        <option value="AMD Ryzen 3 5100">AMD Ryzen 3 5100 (4C/8T, 19MB, 3.6GHz, 4.3GHz, 65W)</option>
+        <option value="AMD Ryzen 5 5600">AMD Ryzen 5 5600 (6C/12T, 35MB, 3.5GHz, 4.4GHz, 65W)</option>
+        <option value="AMD Ryzen 5 5600X">AMD Ryzen 5 5600X (6C/12T, 35MB, 3.7GHz, 4.6GHz, 95W)</option>
+        <option value="AMD Ryzen 5 5600G">AMD Ryzen 5 5600G (6C/12T, 19MB, 3.9GHz, 4.4GHz, 65W)</option>
+        <option value="AMD Ryzen 5 5600U">AMD Ryzen 5 5600U (6C/12T, 19MB, 2.3GHz, 4.4GHz, 15W)</option>
+        <option value="AMD Ryzen 7 5800X">AMD Ryzen 7 5800X (8C/16T, 36MB, 3.8GHz, 4.7GHz, 105W)</option>
+        <option value="AMD Ryzen 7 5800X3D">AMD Ryzen 7 5800X3D (8C/16T, 96MB, 3.4GHz, 4.5GHz, 105W)</option>
+        <option value="AMD Ryzen 9 5900X">AMD Ryzen 9 5900X (12C/24T, 70MB, 3.7GHz, 4.8GHz, 105W)</option>
+        <option value="AMD Ryzen 9 5950X">AMD Ryzen 9 5950X (16C/32T, 72MB, 3.4GHz, 4.9GHz, 105W)</option>
+    </optgroup>
+</optgroup>
 
-                        <!-- Ryzen 5000 Series -->
-                        <optgroup label="Ryzen 5000 Series">
-                            <option value="AMD Ryzen 3 5100">AMD Ryzen 3 5100 (4C/8T, 19MB, 3.6GHz, 4.3GHz, 65W)</option>
-                            <option value="AMD Ryzen 5 5600">AMD Ryzen 5 5600 (6C/12T, 35MB, 3.5GHz, 4.4GHz, 65W)</option>
-                            <option value="AMD Ryzen 5 5600X">AMD Ryzen 5 5600X (6C/12T, 35MB, 3.7GHz, 4.6GHz, 95W)</option>
-                            <option value="AMD Ryzen 5 5600G">AMD Ryzen 5 5600G (6C/12T, 19MB, 3.9GHz, 4.4GHz, 65W)</option>
-                            <option value="AMD Ryzen 5 5600U">AMD Ryzen 5 5600U (6C/12T, 19MB, 2.3GHz, 4.4GHz, 15W)</option>
-                            <option value="AMD Ryzen 7 5800X">AMD Ryzen 7 5800X (8C/16T, 36MB, 3.8GHz, 4.7GHz, 105W)</option>
-                            <option value="AMD Ryzen 7 5800X3D">AMD Ryzen 7 5800X3D (8C/16T, 96MB, 3.4GHz, 4.5GHz, 105W)</option>
-                            <option value="AMD Ryzen 9 5900X">AMD Ryzen 9 5900X (12C/24T, 70MB, 3.7GHz, 4.8GHz, 105W)</option>
-                            <option value="AMD Ryzen 9 5950X">AMD Ryzen 9 5950X (16C/32T, 72MB, 3.4GHz, 4.9GHz, 105W)</option>
-                        </optgroup>
+                       <!-- AM5 CPUs -->
+<optgroup label="AM5 CPUs">
+    <!-- Ryzen 7000 Series -->
+    <optgroup label="Ryzen 7000 Series">
+        <option value="AMD Ryzen 9 7950X">AMD Ryzen 9 7950X (16C/32T, 80MB, 4.5GHz, 5.7GHz, 170W)</option>
+        <option value="AMD Ryzen 9 7900X">AMD Ryzen 9 7900X (12C/24T, 76MB, 4.7GHz, 5.6GHz, 170W)</option>
+        <option value="AMD Ryzen 9 7950X3D">AMD Ryzen 9 7950X3D (16C/32T, 80MB, 4.2GHz, 5.7GHz, 170W)</option>
+        <option value="AMD Ryzen 9 7900X3D">AMD Ryzen 9 7900X3D (12C/24T, 76MB, 4.4GHz, 5.6GHz, 170W)</option>
+        <option value="AMD Ryzen 7 7800X3D">AMD Ryzen 7 7800X3D (8C/16T, 40MB, 4.2GHz, 5.0GHz, 120W)</option>
+        <option value="AMD Ryzen 7 7700X">AMD Ryzen 7 7700X (8C/16T, 40MB, 4.5GHz, 5.4GHz, 105W)</option>
+        <option value="AMD Ryzen 7 7700">AMD Ryzen 7 7700 (8C/16T, 40MB, 3.8GHz, 5.3GHz, 65W)</option>
+        <option value="AMD Ryzen 5 7600X">AMD Ryzen 5 7600X (6C/12T, 38MB, 4.7GHz, 5.3GHz, 105W)</option>
+        <option value="AMD Ryzen 5 7600">AMD Ryzen 5 7600 (6C/12T, 38MB, 3.8GHz, 5.1GHz, 65W)</option>
+        <option value="AMD Ryzen 5 7600G">AMD Ryzen 5 7600G (6C/12T, 38MB, 4.2GHz, 5.0GHz, 65W)</option>
+        <option value="AMD Ryzen 5 7600U">AMD Ryzen 5 7600U (6C/12T, 38MB, 3.3GHz, 4.9GHz, 35W)</option>
+        <option value="AMD Ryzen 5 7500F">AMD Ryzen 5 7500F (6C/12T, 38MB, 3.7GHz, 5.0GHz, 65W)</option>
+        <option value="AMD Ryzen 7 7800U">AMD Ryzen 7 7800U (8C/16T, 40MB, 3.9GHz, 5.1GHz, 35W)</option>
+        <option value="AMD Ryzen 9 7950X3D (35W)">AMD Ryzen 9 7950X3D (16C/32T, 80MB, 4.2GHz, 5.7GHz, 35W)</option>
+    </optgroup>
+</optgroup>
 
-                       <!-- Ryzen 7000 Series -->
-<optgroup label="Ryzen 7000 Series">
-    <option value="AMD Ryzen 9 7950X">AMD Ryzen 9 7950X (16C/32T, 80MB, 4.5GHz, 5.7GHz, 170W)</option>
-    <option value="AMD Ryzen 9 7900X">AMD Ryzen 9 7900X (12C/24T, 76MB, 4.7GHz, 5.6GHz, 170W)</option>
-    <option value="AMD Ryzen 9 7950X3D">AMD Ryzen 9 7950X3D (16C/32T, 80MB, 4.2GHz, 5.7GHz, 170W)</option>
-    <option value="AMD Ryzen 9 7900X3D">AMD Ryzen 9 7900X3D (12C/24T, 76MB, 4.4GHz, 5.6GHz, 170W)</option>
-    <option value="AMD Ryzen 7 7800X3D">AMD Ryzen 7 7800X3D (8C/16T, 40MB, 4.2GHz, 5.0GHz, 120W)</option>
-    <option value="AMD Ryzen 7 7700X">AMD Ryzen 7 7700X (8C/16T, 40MB, 4.5GHz, 5.4GHz, 105W)</option>
-    <option value="AMD Ryzen 7 7700">AMD Ryzen 7 7700 (8C/16T, 40MB, 3.8GHz, 5.3GHz, 65W)</option>
-    <option value="AMD Ryzen 5 7600X">AMD Ryzen 5 7600X (6C/12T, 38MB, 4.7GHz, 5.3GHz, 105W)</option>
-    <option value="AMD Ryzen 5 7600">AMD Ryzen 5 7600 (6C/12T, 38MB, 3.8GHz, 5.1GHz, 65W)</option>
-    <option value="AMD Ryzen 5 7600G">AMD Ryzen 5 7600G (6C/12T, 38MB, 4.2GHz, 5.0GHz, 65W)</option>
-    <option value="AMD Ryzen 5 7600U">AMD Ryzen 5 7600U (6C/12T, 38MB, 3.3GHz, 4.9GHz, 35W)</option>
-    <option value="AMD Ryzen 5 7600U (35W)">AMD Ryzen 5 7600U (6C/12T, 38MB, 3.3GHz, 4.9GHz, 35W)</option>
-    <option value="AMD Ryzen 5 7500F">AMD Ryzen 5 7500F (6C/12T, 38MB, 3.7GHz, 5.0GHz, 65W)</option>
-    <option value="AMD Ryzen 7 7800U">AMD Ryzen 7 7800U (8C/16T, 40MB, 3.9GHz, 5.1GHz, 35W)</option>
-    <option value="AMD Ryzen 9 7950X3D (35W)">AMD Ryzen 9 7950X3D (16C/32T, 80MB, 4.2GHz, 5.7GHz, 35W)</option>
+                      <!-- LGA 1700 CPUs -->
+<optgroup label="LGA 1700 CPUs">
+    <!-- Core i9 Series -->
+    <optgroup label="Core i9 Series">
+        <option value="Intel Core i9-13900K">Intel Core i9-13900K (24C/32T, 36MB, 3.0GHz, 5.8GHz, 125W)</option>
+        <option value="Intel Core i9-13900KF">Intel Core i9-13900KF (24C/32T, 36MB, 3.0GHz, 5.8GHz, 125W)</option>
+        <option value="Intel Core i9-13900T">Intel Core i9-13900T (24C/32T, 36MB, 1.1GHz, 5.4GHz, 35W)</option>
+        <option value="Intel Core i9-12900K">Intel Core i9-12900K (16C/24T, 30MB, 3.2GHz, 5.2GHz, 125W)</option>
+        <option value="Intel Core i9-12900KF">Intel Core i9-12900KF (16C/24T, 30MB, 3.2GHz, 5.2GHz, 125W)</option>
+        <option value="Intel Core i9-12900T">Intel Core i9-12900T (16C/24T, 30MB, 1.3GHz, 4.9GHz, 35W)</option>
+    </optgroup>
+
+    <!-- Core i7 Series -->
+    <optgroup label="Core i7 Series">
+        <option value="Intel Core i7-13700K">Intel Core i7-13700K (16C/24T, 30MB, 3.4GHz, 5.4GHz, 125W)</option>
+        <option value="Intel Core i7-13700KF">Intel Core i7-13700KF (16C/24T, 30MB, 3.4GHz, 5.4GHz, 125W)</option>
+        <option value="Intel Core i7-13700T">Intel Core i7-13700T (16C/24T, 30MB, 1.4GHz, 5.0GHz, 35W)</option>
+        <option value="Intel Core i7-12700K">Intel Core i7-12700K (12C/20T, 25MB, 3.6GHz, 5.0GHz, 125W)</option>
+        <option value="Intel Core i7-12700KF">Intel Core i7-12700KF (12C/20T, 25MB, 3.6GHz, 5.0GHz, 125W)</option>
+        <option value="Intel Core i7-12700T">Intel Core i7-12700T (12C/20T, 25MB, 1.4GHz, 4.9GHz, 35W)</option>
+    </optgroup>
+
+    <!-- Core i5 Series -->
+    <optgroup label="Core i5 Series">
+        <option value="Intel Core i5-13600K">Intel Core i5-13600K (14C/20T, 24MB, 3.5GHz, 5.1GHz, 125W)</option>
+        <option value="Intel Core i5-13600KF">Intel Core i5-13600KF (14C/20T, 24MB, 3.5GHz, 5.1GHz, 125W)</option>
+        <option value="Intel Core i5-13600T">Intel Core i5-13600T (14C/20T, 24MB, 1.4GHz, 4.9GHz, 35W)</option>
+        <option value="Intel Core i5-12600K">Intel Core i5-12600K (10C/16T, 20MB, 3.7GHz, 4.9GHz, 125W)</option>
+        <option value="Intel Core i5-12600KF">Intel Core i5-12600KF (10C/16T, 20MB, 3.7GHz, 4.9GHz, 125W)</option>
+        <option value="Intel Core i5-12600T">Intel Core i5-12600T (10C/16T, 20MB, 1.4GHz, 4.6GHz, 35W)</option>
+    </optgroup>
+
+    <!-- Core i3 Series -->
+    <optgroup label="Core i3 Series">
+        <option value="Intel Core i3-13100">Intel Core i3-13100 (4C/8T, 12MB, 3.4GHz, 4.5GHz, 60W)</option>
+        <option value="Intel Core i3-13100F">Intel Core i3-13100F (4C/8T, 12MB, 3.4GHz, 4.5GHz, 60W)</option>
+        <option value="Intel Core i3-12100">Intel Core i3-12100 (4C/8T, 12MB, 3.3GHz, 4.3GHz, 60W)</option>
+        <option value="Intel Core i3-12100F">Intel Core i3-12100F (4C/8T, 12MB, 3.3GHz, 4.3GHz, 60W)</option>
+    </optgroup>
+
+    <!-- Pentium and Celeron Series -->
+    <optgroup label="Pentium and Celeron Series">
+        <option value="Intel Pentium Gold G7400">Intel Pentium Gold G7400 (2C/4T, 10MB, 3.7GHz, 3.7GHz, 46W)</option>
+        <option value="Intel Pentium Gold G7400T">Intel Pentium Gold G7400T (2C/4T, 10MB, 3.1GHz, 3.1GHz, 35W)</option>
+        <option value="Intel Celeron G6900">Intel Celeron G6900 (2C/2T, 4MB, 3.4GHz, 3.4GHz, 46W)</option>
+        <option value="Intel Celeron G6900T">Intel Celeron G6900T (2C/2T, 4MB, 3.0GHz, 3.0GHz, 35W)</option>
+    </optgroup>
 </optgroup>
 
                     </select>
@@ -119,8 +172,8 @@
                     <label for="gpu">GPU:</label>
                     <select id="gpu" name="gpu">
                         <option value="">Select a GPU</option>
-
-                        <!-- AMD 6000 Series GPUs -->
+                        <!-- Add GPU options here -->
+						<!-- AMD 6000 Series GPUs -->
                         <optgroup label="AMD 6000 Series">
                             <option value="AMD Radeon RX 6600">AMD Radeon RX 6600 (132W)</option>
                             <option value="AMD Radeon RX 6600 XT">AMD Radeon RX 6600 XT (160W)</option>
@@ -171,7 +224,8 @@
                     <label for="ram">RAM:</label>
                     <select id="ram" name="ram">
                         <option value="">Select RAM</option>
-    <option value="corsair_vengeance_5600">Corsair Vengeance DDR5 5600 MHz - CAS 36 - 16 GB (2 x 8 GB)</option>
+                        <!-- Add RAM options here -->
+						 <option value="corsair_vengeance_5600">Corsair Vengeance DDR5 5600 MHz - CAS 36 - 16 GB (2 x 8 GB)</option>
     <option value="corsair_dominator_platinum_6400">Corsair Dominator Platinum DDR5 6400 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
     <option value="gskill_ripjaws_s5_6000">G.Skill Ripjaws S5 DDR5 6000 MHz - CAS 40 - 16 GB (2 x 8 GB)</option>
     <option value="gskill_trident_z5_6400">G.Skill Trident Z5 DDR5 6400 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
@@ -196,43 +250,31 @@
                     </select>
                 </div>
 
-		  <!-- Motherboard -->
-<div class="form-group">
-    <label for="motherboard">Motherboard:</label>
-    <select id="motherboard" name="motherboard">
-        <option value="">Select Motherboard</option>
-        <option value="Asus ROG Crosshair X670E Hero">Asus ROG Crosshair X670E Hero</option>
-        <option value="MSI MEG X670E ACE">MSI MEG X670E ACE</option>
-        <option value="Gigabyte X670E Aorus XTREME">Gigabyte X670E Aorus XTREME</option>
-        <option value="ASRock X670E Taichi">ASRock X670E Taichi</option>
-        <option value="Asus ROG Strix X670E-E Gaming WiFi">Asus ROG Strix X670E-E Gaming WiFi</option>
-        <option value="MSI MPG X670E Carbon WiFi">MSI MPG X670E Carbon WiFi</option>
-        <option value="Gigabyte X670 Aorus Elite AX">Gigabyte X670 Aorus Elite AX</option>
-        <option value="ASRock X670E PG Lightning">ASRock X670E PG Lightning</option>
-        <option value="Asus TUF Gaming X670E-PLUS WiFi">Asus TUF Gaming X670E-PLUS WiFi</option>
-        <option value="MSI MAG X670E Tomahawk WiFi">MSI MAG X670E Tomahawk WiFi</option>
-        <option value="Gigabyte B650 Aorus Pro AX">Gigabyte B650 Aorus Pro AX</option>
-        <option value="ASRock B650E Steel Legend">ASRock B650E Steel Legend</option>
-        <option value="Asus ROG Strix B650E-F Gaming WiFi">Asus ROG Strix B650E-F Gaming WiFi</option>
-        <option value="MSI B650M Mortar WiFi">MSI B650M Mortar WiFi</option>
-        <option value="Gigabyte B650 Aorus Elite">Gigabyte B650 Aorus Elite</option>
-        <option value="ASRock B650 PG Riptide">ASRock B650 PG Riptide</option>
-        <option value="Asus TUF Gaming B650-PLUS WiFi">Asus TUF Gaming B650-PLUS WiFi</option>
-        <option value="MSI PRO B650-P WiFi">MSI PRO B650-P WiFi</option>
-        <option value="Gigabyte B650M Aorus Elite">Gigabyte B650M Aorus Elite</option>
-        <option value="ASRock B650M Steel Legend">ASRock B650M Steel Legend</option>
-    </select>
-</div>
+                <!-- Motherboard -->
+                <div class="form-group">
+                    <label for="motherboard">Motherboard:</label>
+                    <select id="motherboard" name="motherboard">
+                        <option value="">Select Motherboard</option>
+                        <!-- AM4 Motherboards -->
+                        <option value="ASUS ROG Strix B550-F" data-socket="AM4">ASUS ROG Strix B550-F</option>
+                        <option value="MSI MPG X570 Gaming Plus" data-socket="AM4">MSI MPG X570 Gaming Plus</option>
+                        <!-- AM5 Motherboards -->
+                        <option value="ASUS ROG Strix X670E-E" data-socket="AM5">ASUS ROG Strix X670E-E</option>
+                        <option value="MSI MAG B650 TOMAHAWK" data-socket="AM5">MSI MAG B650 TOMAHAWK</option>
+                        <!-- LGA 1700 Motherboards -->
+                        <option value="ASUS ROG Strix Z790-E" data-socket="LGA 1700">ASUS ROG Strix Z790-E</option>
+                        <option value="MSI MPG Z690 Carbon WiFi" data-socket="LGA 1700">MSI MPG Z690 Carbon WiFi</option>
+                        <!-- More Motherboards can be added here -->
+                    </select>
+                </div>
 
-
-        <!-- Storage Devices Dropdown -->
-<div class="form-group">
-  <label for="storage">Select Storage Device:</label>
-  <select id="storage" name="storage" aria-label="Select Storage Device">
-    <!-- Default Option -->
-    <option value="" selected disabled>Select Storage Device</option>
-
-    <!-- NVMe SSDs -->
+                <!-- Storage Devices Dropdown -->
+                <div class="form-group">
+                    <label for="storage">Select Storage Device:</label>
+                    <select id="storage" name="storage" aria-label="Select Storage Device">
+                        <option value="" selected disabled>Select Storage Device</option>
+                        <!-- Add Storage options here -->
+						  <!-- NVMe SSDs -->
     <optgroup label="NVMe SSDs">
       <option value="Samsung 970 Evo Plus NVMe">Samsung 970 Evo Plus - 1TB, PCIe Gen 3</option>
       <option value="Samsung 980 Pro NVMe">Samsung 980 Pro - 1TB, PCIe Gen 4</option>
@@ -256,17 +298,16 @@
       <option value="Toshiba X300 HDD">Toshiba X300 - 4TB, 7200 RPM</option>
       <option value="Seagate IronWolf NAS HDD">Seagate IronWolf NAS - 6TB, 7200 RPM</option>
     </optgroup>
-  </select>
-</div>
+                    </select>
+                </div>
 
-	<!-- Coolers Dropdown -->
-<div class="form-group">
-  <label for="cooler">Select Cooler:</label>
-  <select id="cooler" name="cooler" aria-label="Select Cooler">
-    <!-- Default Option -->
-    <option value="" selected disabled>Select Cooler</option>
-
-    <!-- Air Coolers -->
+                <!-- Coolers Dropdown -->
+                <div class="form-group">
+                    <label for="cooler">Select Cooler:</label>
+                    <select id="cooler" name="cooler" aria-label="Select Cooler">
+                        <option value="" selected disabled>Select Cooler</option>
+                        <!-- Add Cooler options here -->
+						  <!-- Air Coolers -->
     <optgroup label="Air Coolers">
       <option value="Noctua NH-D15">Noctua NH-D15 - Dual Tower, 140mm Fans</option>
       <option value="Cooler Master Hyper 212 RGB">Cooler Master Hyper 212 RGB - Single Tower, 120mm Fan</option>
@@ -293,17 +334,16 @@
       <option value="Thermaltake Pacific C360 DDC">Thermaltake Pacific C360 DDC - Hard Tube Water Cooling Kit</option>
       <option value="Alphacool Eisbaer Extreme">Alphacool Eisbaer Extreme - Customizable Loop System</option>
     </optgroup>
-  </select>
-</div>
+                    </select>
+                </div>
 
-
-
-               <!-- PSU -->
-<div class="form-group">
-  <label for="psu">Power Supply Unit (PSU):</label>
-  <select id="psu" name="psu" aria-label="Select PSU">
-    <option value="" disabled selected>Select PSU</option>
-    <option value="Corsair RM750x">Corsair RM750x - 750W, 80+ Gold, Fully Modular</option>
+                <!-- PSU -->
+                <div class="form-group">
+                    <label for="psu">Power Supply Unit (PSU):</label>
+                    <select id="psu" name="psu" aria-label="Select PSU">
+                        <option value="" disabled selected>Select PSU</option>
+                        <!-- Add PSU options here -->
+						  <option value="Corsair RM750x">Corsair RM750x - 750W, 80+ Gold, Fully Modular</option>
     <option value="Corsair RM850x">Corsair RM850x - 850W, 80+ Gold, Fully Modular</option>
     <option value="Corsair HX1000">Corsair HX1000 - 1000W, 80+ Platinum, Fully Modular</option>
     <option value="Corsair SF750">Corsair SF750 - 750W, 80+ Platinum, SFX, Fully Modular</option>
@@ -323,16 +363,16 @@
     <option value="ASUS ROG Strix 750W Gold">ASUS ROG Strix 750W Gold - 80+ Gold, Fully Modular, RGB</option>
     <option value="SilverStone SX800-LTI">SilverStone SX800-LTI - 800W, 80+ Titanium, SFX-L, Fully Modular</option>
     <option value="SilverStone Strider Titanium 1500W">SilverStone Strider Titanium 1500W - 80+ Titanium, Fully Modular</option>
-  </select>
-</div>
-
+                    </select>
+                </div>
 
                 <!-- Case -->
-<div class="form-group">
-  <label for="case">Case:</label>
-  <select id="case" name="case" aria-label="Select Case">
-    <option value="" disabled selected>Select Case</option>
-    <option value="NZXT H6 FLOW">NZXT H6 FLOW</option>
+                <div class="form-group">
+                    <label for="case">Case:</label>
+                    <select id="case" name="case" aria-label="Select Case">
+                        <option value="" disabled selected>Select Case</option>
+                        <!-- Add Case options here -->
+						<option value="NZXT H6 FLOW">NZXT H6 FLOW</option>
     <option value="NZXT H7 FLOW">NZXT H7 FLOW</option>
     <option value="NZXT H9 FLOW">NZXT H9 FLOW</option>
     <option value="Corsair 4000D Airflow">Corsair 4000D Airflow</option>
@@ -368,82 +408,180 @@
     <option value="Deepcool Matrexx 55 V3">Deepcool Matrexx 55 V3</option>
     <option value="NZXT Phantom 410">NZXT Phantom 410</option>
     <option value="NZXT H510 Elite">NZXT H510 Elite</option>
-  </select>
-</div>
-                     </form>
+                    </select>
+                </div>
+
+                <!-- Compatibility Check Button -->
+                <div class="form-group">
+                    <button type="button" id="check-compatibility">Check Compatibility</button>
+                </div>
+            </form>
         </section>
+
         <section class="calculator-section">
             <h2>Calculate Total TDP</h2>
             <div id="total-tdp">Total TDP: 0W</div>
-		<form id="pc-build-form">
-    <!-- CPU, GPU, RAM, motherboard, storage, PSU, and case selections here -->
-    <button type="submit">Submit</button>
-</form>
+        </section>
+
+        <!-- Compatibility result section -->
+        <section id="compatibility-result" class="hidden">
+            <h2>Compatibility Check Result</h2>
+            <p id="compatibility-message"></p>
         </section>
     </main>
+
     <script>
-       const cpuTDP = {
-    'AMD Ryzen 3 1200': 65,
-    'AMD Ryzen 3 1300X': 95,
-    'AMD Ryzen 5 1400': 65,
-    'AMD Ryzen 5 1500X': 95,
-    'AMD Ryzen 5 1600': 65,
-    'AMD Ryzen 5 1600X': 95,
-    'AMD Ryzen 7 1700': 65,
-    'AMD Ryzen 7 1700X': 95,
-    'AMD Ryzen 7 1800X': 95,
-    'AMD Ryzen 3 2200G': 65,
-    'AMD Ryzen 3 2300X': 95,
-    'AMD Ryzen 5 2400G': 65,
-    'AMD Ryzen 5 2500X': 95,
-    'AMD Ryzen 5 2600': 65,
-    'AMD Ryzen 5 2600X': 95,
-    'AMD Ryzen 7 2700': 65,
-    'AMD Ryzen 7 2700X': 105,
-    'AMD Ryzen 3 3100': 65,
-    'AMD Ryzen 3 3300X': 65,
-    'AMD Ryzen 5 3400G': 65,
-    'AMD Ryzen 5 3600': 65,
-    'AMD Ryzen 5 3600X': 95,
-    'AMD Ryzen 5 3600XT': 95,
-    'AMD Ryzen 7 3700X': 65,
-    'AMD Ryzen 7 3800X': 105,
-    'AMD Ryzen 7 3800XT': 105,
-    'AMD Ryzen 9 3900X': 105,
-    'AMD Ryzen 9 3950X': 105,
-    'AMD Ryzen 3 4100': 65,
-    'AMD Ryzen 5 4600G': 65,
-    'AMD Ryzen 5 4650G': 65,
-    'AMD Ryzen 7 4700G': 65,
-    'AMD Ryzen 7 4800U': 15,
-    'AMD Ryzen 3 5100': 65,
-    'AMD Ryzen 5 5600': 65,
-    'AMD Ryzen 5 5600X': 95,
-    'AMD Ryzen 5 5600G': 65,
-    'AMD Ryzen 5 5600U': 15,
-    'AMD Ryzen 7 5800X': 105,
-    'AMD Ryzen 7 5800X3D': 105,
-    'AMD Ryzen 9 5900X': 105,
-    'AMD Ryzen 9 5950X': 105,
-    'AMD Ryzen 9 7950X': 170,
-    'AMD Ryzen 9 7900X': 170,
-    'AMD Ryzen 7 7700X': 105,
-    'AMD Ryzen 5 7600X': 105,
-    'AMD Ryzen 9 7950X3D': 170,
-    'AMD Ryzen 9 7900X3D': 170,
-    'AMD Ryzen 7 7800X3D': 120,
-    'AMD Ryzen 7 7700': 65,
-    'AMD Ryzen 5 7600': 65,
-    'AMD Ryzen 5 7600G': 65,
-    'AMD Ryzen 5 7600U': 35,
-    'AMD Ryzen 5 7500F': 65,
-    'AMD Ryzen 7 7800U': 35,
-};
+        // CPU and GPU TDP values
+        const cpuTDP = {
+            // Add CPU TDP values here
+			'AMD Ryzen 3 1200': 65,
+'AMD Ryzen 3 1300X': 95,
+'AMD Ryzen 5 1400': 65,
+'AMD Ryzen 5 1500X': 95,
+'AMD Ryzen 5 1600': 65,
+'AMD Ryzen 5 1600X': 95,
+'AMD Ryzen 7 1700': 65,
+'AMD Ryzen 7 1700X': 95,
+'AMD Ryzen 7 1800X': 95,
+'AMD Ryzen 3 2200G': 65,
+'AMD Ryzen 3 2300X': 95,
+'AMD Ryzen 5 2400G': 65,
+'AMD Ryzen 5 2500X': 95,
+'AMD Ryzen 5 2600': 65,
+'AMD Ryzen 5 2600X': 95,
+'AMD Ryzen 7 2700': 65,
+'AMD Ryzen 7 2700X': 105,
+'AMD Ryzen 3 3100': 65,
+'AMD Ryzen 3 3300X': 65,
+'AMD Ryzen 5 3400G': 65,
+'AMD Ryzen 5 3600': 65,
+'AMD Ryzen 5 3600X': 95,
+'AMD Ryzen 5 3600XT': 95,
+'AMD Ryzen 7 3700X': 65,
+'AMD Ryzen 7 3800X': 105,
+'AMD Ryzen 7 3800XT': 105,
+'AMD Ryzen 9 3900X': 105,
+'AMD Ryzen 9 3950X': 105,
+'AMD Ryzen 3 4100': 65,
+'AMD Ryzen 5 4600G': 65,
+'AMD Ryzen 5 4650G': 65,
+'AMD Ryzen 7 4700G': 65,
+'AMD Ryzen 7 4800U': 15,
+'AMD Ryzen 3 5100': 65,
+'AMD Ryzen 5 5600': 65,
+'AMD Ryzen 5 5600X': 95,
+'AMD Ryzen 5 5600G': 65,
+'AMD Ryzen 5 5600U': 15,
+'AMD Ryzen 7 5800X': 105,
+'AMD Ryzen 7 5800X3D': 105,
+'AMD Ryzen 9 5900X': 105,
+'AMD Ryzen 9 5950X': 105,
+'AMD Ryzen 9 7950X': 170,
+'AMD Ryzen 9 7900X': 170,
+'AMD Ryzen 7 7700X': 105,
+'AMD Ryzen 5 7600X': 105,
+'AMD Ryzen 9 7950X3D': 170,
+'AMD Ryzen 9 7900X3D': 170,
+'AMD Ryzen 7 7800X3D': 120,
+'AMD Ryzen 7 7700': 65,
+'AMD Ryzen 5 7600': 65,
+'AMD Ryzen 5 7600G': 65,
+'AMD Ryzen 5 7600U': 35,
+'AMD Ryzen 5 7500F': 65,
+'AMD Ryzen 7 7800U': 35,
+'AMD Ryzen 3 3200G': 65,
+'AMD Ryzen 5 3400G': 65,
+'AMD Ryzen 5 3500': 65,
+'AMD Ryzen 5 3500X': 65,
+'AMD Ryzen 7 3700': 65,
+'AMD Ryzen 7 3800': 65,
+'AMD Ryzen 7 3800X': 105,
+'AMD Ryzen 9 3900': 65,
+'AMD Ryzen 9 3900X': 105,
+'AMD Ryzen 9 3950X': 105,
+'AMD Ryzen 5 4600U': 15,
+'AMD Ryzen 5 5600U': 15,
+'AMD Ryzen 7 5800U': 15,
+'AMD Ryzen 5 6600U': 15,
+'AMD Ryzen 7 5800H': 45,
+'AMD Ryzen 7 5800HS': 35,
+'AMD Ryzen 9 5900HS': 35,
+'AMD Ryzen 9 5900HX': 45,
+'AMD Ryzen 5 5600G': 65,
+'AMD Ryzen 7 5700G': 65,
+'AMD Ryzen 9 5900HX': 45,
+'AMD Ryzen 5 5600U': 15,
+'AMD Ryzen 5 5600G': 65,
+'AMD Ryzen 5 5600X': 95,
+'AMD Ryzen 5 5600H': 45,
+'AMD Ryzen 7 5700G': 65,
+'AMD Ryzen 7 5800H': 45,
+'AMD Ryzen 7 5800HS': 35,
+'AMD Ryzen 7 5800U': 15,
+'AMD Ryzen 7 5800X': 105,
+'AMD Ryzen 9 5900HX': 45,
+'AMD Ryzen 9 5950X': 105,
+'AMD Ryzen 9 5900HS': 35,
+'AMD Ryzen 9 5950X': 105,
+'AMD Ryzen 9 7950X': 170,
+'AMD Ryzen 9 7900X': 170,
+'AMD Ryzen 9 7950X3D': 170,
+'AMD Ryzen 9 7900X3D': 170,
+'AMD Ryzen 7 7800X3D': 120,
+'AMD Ryzen 5 7600': 65,
+'AMD Ryzen 5 7600G': 65,
+'AMD Ryzen 5 7600X': 105,
+'AMD Ryzen 5 7600U': 35,
+'AMD Ryzen 7 7800U': 35,
+'AMD Ryzen 5 7500F': 65,
 
+'Intel Core i3-8100': 65,
+'Intel Core i3-8300': 62,
+'Intel Core i3-9100': 65,
+'Intel Core i3-9300': 62,
+'Intel Core i5-8400': 65,
+'Intel Core i5-8500': 65,
+'Intel Core i5-8600K': 95,
+'Intel Core i5-9600K': 95,
+'Intel Core i7-8700': 65,
+'Intel Core i7-8700K': 95,
+'Intel Core i7-9700K': 95,
+'Intel Core i9-9900K': 95,
+'Intel Core i9-9900KF': 95,
+'Intel Core i3-10100': 65,
+'Intel Core i3-10300': 65,
+'Intel Core i5-10400': 65,
+'Intel Core i5-10600': 65,
+'Intel Core i5-10600K': 125,
+'Intel Core i7-10700': 65,
+'Intel Core i7-10700K': 125,
+'Intel Core i9-10900K': 125,
+'Intel Core i9-10900KF': 125,
+'Intel Core i5-11400': 65,
+'Intel Core i5-11600K': 125,
+'Intel Core i7-11700': 65,
+'Intel Core i7-11700K': 125,
+'Intel Core i9-11900K': 125,
+'Intel Core i9-11900KF': 125,
+'Intel Core i3-12100': 60,
+'Intel Core i5-12400': 65,
+'Intel Core i5-12600K': 125,
+'Intel Core i7-12700': 65,
+'Intel Core i7-12700K': 125,
+'Intel Core i9-12900K': 125,
+'Intel Core i9-12900KF': 125,
+'Intel Core i5-13400': 65,
+'Intel Core i5-13600K': 125,
+'Intel Core i7-13700': 65,
+'Intel Core i7-13700K': 125,
+'Intel Core i9-13900K': 125,
+'Intel Core i9-13900KF': 125,
+'Intel Core i9-13900': 65,
+        };
 
-
-			 const gpuTDP = {
-				'AMD Radeon RX 6600': 132,
+        const gpuTDP = {
+            // Add GPU TDP values here
+			'AMD Radeon RX 6600': 132,
 				'AMD Radeon RX 6600 XT': 160,
 				'AMD Radeon RX 6650 XT': 180,
 				'AMD Radeon RX 6700 XT': 230,
@@ -471,9 +609,9 @@
 				'NVIDIA GeForce RTX 4070 Ti': 285,
 				'NVIDIA GeForce RTX 4080': 320,
 				'NVIDIA GeForce RTX 4090': 450
-			};
+        };
 
-
+        // Update TDP values
         document.querySelectorAll('select').forEach(select => {
             select.addEventListener('change', updateTDP);
         });
@@ -487,23 +625,9 @@
             if (cpu) totalTDP += cpuTDP[cpu] || 0;
             if (gpu) totalTDP += gpuTDP[gpu] || 0;
 
-            document.querySelector('#total-tdp').textContent = Total TDP: ${totalTDP}W;
+            document.querySelector('#total-tdp').textContent = `Total TDP: ${totalTDP}W`;
+        }
 
-                <!-- Compatibility Check Button -->
-                <div class="form-group">
-                    <button type="button" id="check-compatibility">Check Compatibility</button>
-                </div>
-            </form>
-        </section>
-
-        <!-- Compatibility result section -->
-        <section id="compatibility-result" class="hidden">
-            <h2>Compatibility Check Result</h2>
-            <p id="compatibility-message"></p>
-        </section>
-    </main>
-
-    <script>
         // Toggle dark mode
         const toggleDarkMode = document.getElementById('dark-mode-toggle');
         toggleDarkMode.addEventListener('click', () => {
@@ -513,27 +637,21 @@
         // Compatibility check function
         document.getElementById('check-compatibility').addEventListener('click', () => {
             const cpu = document.getElementById('cpu').value;
-            const gpu = document.getElementById('gpu').value;
-            const ram = document.getElementById('ram').value;
-            const storage = document.getElementById('storage').value;
             const motherboard = document.getElementById('motherboard').value;
-            const caseType = document.getElementById('case').value;
             const resultSection = document.getElementById('compatibility-result');
             const message = document.getElementById('compatibility-message');
 
-            // Compatibility logic (simplified example)
+            const cpuSocket = document.querySelector('#cpu option:checked').getAttribute('data-socket');
+            const motherboardSocket = document.querySelector('#motherboard option:checked').getAttribute('data-socket');
+
+            // Compatibility logic (based on socket group)
             let compatible = true;
             let incompatibleParts = [];
 
-            // Example compatibility checks
-            if (cpu === 'AMD Ryzen 5 5600X' && motherboard !== 'ASUS ROG Strix B550-F') {
+            // Check if CPU and Motherboard are in the same socket group
+            if (cpuSocket !== motherboardSocket) {
                 compatible = false;
-                incompatibleParts.push('AMD Ryzen 5 5600X with ' + motherboard);
-            }
-
-            if (gpu === 'NVIDIA GeForce RTX 3080' && caseType !== 'NZXT H510') {
-                compatible = false;
-                incompatibleParts.push('NVIDIA GeForce RTX 3080 with ' + caseType);
+                incompatibleParts.push(`CPU (${cpu}) with Motherboard (${motherboard})`);
             }
 
             if (compatible) {
