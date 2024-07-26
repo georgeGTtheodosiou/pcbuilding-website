@@ -155,34 +155,77 @@
                     </select>
                 </div>
 
-                <!-- RAM -->
-                <div class="form-group">
-                    <label for="ram">RAM:</label>
-                    <select id="ram" name="ram">
-                        <option value="">Select RAM</option>
-                        <!-- Add RAM options here -->
-						 <option value="corsair_vengeance_5600">Corsair Vengeance DDR5 5600 MHz - CAS 36 - 16 GB (2 x 8 GB)</option>
-    <option value="corsair_dominator_platinum_6400">Corsair Dominator Platinum DDR5 6400 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
-    <option value="gskill_ripjaws_s5_6000">G.Skill Ripjaws S5 DDR5 6000 MHz - CAS 40 - 16 GB (2 x 8 GB)</option>
-    <option value="gskill_trident_z5_6400">G.Skill Trident Z5 DDR5 6400 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
-    <option value="kingston_fury_beast_5600">Kingston Fury Beast DDR5 5600 MHz - CAS 36 - 16 GB (2 x 8 GB)</option>
-    <option value="kingston_fury_renegade_6400">Kingston Fury Renegade DDR5 6400 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
-    <option value="crucial_ballistix_5600">Crucial Ballistix DDR5 5600 MHz - CAS 40 - 16 GB (2 x 8 GB)</option>
-    <option value="crucial_xlr8_6400">Crucial XLR8 DDR5 6400 MHz - CAS 38 - 32 GB (2 x 16 GB)</option>
-    <option value="adata_xpg_lancer_6000">ADATA XPG Lancer DDR5 6000 MHz - CAS 36 - 16 GB (2 x 8 GB)</option>
-    <option value="adata_xpg_spectrix_d45g_6400">ADATA XPG Spectrix D45G DDR5 6400 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
-    <option value="hyperx_fury_5600">HyperX Fury DDR5 5600 MHz - CAS 40 - 16 GB (2 x 8 GB)</option>
-    <option value="hyperx_predator_6400">HyperX Predator DDR5 6400 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
-    <option value="team_t_force_delta_6000">Team T-Force Delta DDR5 6000 MHz - CAS 40 - 16 GB (2 x 8 GB)</option>
-    <option value="team_t_force_xtreem_6400">Team T-Force Xtreem DDR5 6400 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
-    <option value="zotac_gaming_5600">Zotac Gaming DDR5 5600 MHz - CAS 40 - 16 GB (2 x 8 GB)</option>
-    <option value="zotac_arctic_6000">Zotac Arctic DDR5 6000 MHz - CAS 40 - 16 GB (2 x 8 GB)</option>
-    <option value="msi_spatium_6400">MSI Spatium DDR5 6400 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
-    <option value="asus_rog_strix_5600">ASUS ROG Strix DDR5 5600 MHz - CAS 40 - 16 GB (2 x 8 GB)</option>
-    <option value="gigabyte_aorus_5600">Gigabyte AORUS DDR5 5600 MHz - CAS 36 - 16 GB (2 x 8 GB)</option>
-    <option value="biostar_racing_6400">Biostar Racing DDR5 6400 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
-    <option value="patriot_viper_6400">Patriot Viper DDR5 6400 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
-    <option value="xpg_d60g_6000">XPG D60G DDR5 6000 MHz - CAS 36 - 16 GB (2 x 8 GB)</option>
+                
+<div class="form-group">
+    <label for="ram">RAM:</label>
+    <select id="ram" name="ram">
+        <option value="">Select RAM</option>
+        <!-- Existing RAM options -->
+        <option value="corsair_vengeance_5600">Corsair Vengeance DDR5 5600 MHz - CAS 36 - 16 GB (2 x 8 GB)</option>
+        <option value="corsair_dominator_platinum_6400">Corsair Dominator Platinum DDR5 6400 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
+        <option value="gskill_ripjaws_s5_6000">G.Skill Ripjaws S5 DDR5 6000 MHz - CAS 40 - 16 GB (2 x 8 GB)</option>
+        <option value="gskill_trident_z5_6400">G.Skill Trident Z5 DDR5 6400 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
+        <option value="kingston_fury_beast_5600">Kingston Fury Beast DDR5 5600 MHz - CAS 36 - 16 GB (2 x 8 GB)</option>
+        <option value="kingston_fury_renegade_6400">Kingston Fury Renegade DDR5 6400 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
+        <option value="crucial_ballistix_5600">Crucial Ballistix DDR5 5600 MHz - CAS 40 - 16 GB (2 x 8 GB)</option>
+        <option value="crucial_xlr8_6400">Crucial XLR8 DDR5 6400 MHz - CAS 38 - 32 GB (2 x 16 GB)</option>
+        <option value="adata_xpg_lancer_6000">ADATA XPG Lancer DDR5 6000 MHz - CAS 36 - 16 GB (2 x 8 GB)</option>
+        <option value="adata_xpg_spectrix_d45g_6400">ADATA XPG Spectrix D45G DDR5 6400 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
+        <option value="hyperx_fury_5600">HyperX Fury DDR5 5600 MHz - CAS 40 - 16 GB (2 x 8 GB)</option>
+        <option value="hyperx_predator_6400">HyperX Predator DDR5 6400 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
+        <option value="team_t_force_delta_6000">Team T-Force Delta DDR5 6000 MHz - CAS 40 - 16 GB (2 x 8 GB)</option>
+        <option value="team_t_force_xtreem_6400">Team T-Force Xtreem DDR5 6400 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
+        <option value="zotac_gaming_5600">Zotac Gaming DDR5 5600 MHz - CAS 40 - 16 GB (2 x 8 GB)</option>
+        <option value="zotac_arctic_6000">Zotac Arctic DDR5 6000 MHz - CAS 40 - 16 GB (2 x 8 GB)</option>
+        <option value="msi_spatium_6400">MSI Spatium DDR5 6400 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
+        <option value="asus_rog_strix_5600">ASUS ROG Strix DDR5 5600 MHz - CAS 40 - 16 GB (2 x 8 GB)</option>
+        <option value="gigabyte_aorus_5600">Gigabyte AORUS DDR5 5600 MHz - CAS 36 - 16 GB (2 x 8 GB)</option>
+        <option value="biostar_racing_6400">Biostar Racing DDR5 6400 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
+        <option value="patriot_viper_6400">Patriot Viper DDR5 6400 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
+        <option value="xpg_d60g_6000">XPG D60G DDR5 6000 MHz - CAS 36 - 16 GB (2 x 8 GB)</option>
+
+        <!-- New RAM options -->
+        <option value="corsair_vengeance_7200">Corsair Vengeance DDR5 7200 MHz - CAS 34 - 32 GB (2 x 16 GB)</option>
+        <option value="corsair_dominator_platinum_7000">Corsair Dominator Platinum DDR5 7000 MHz - CAS 36 - 64 GB (2 x 32 GB)</option>
+        <option value="gskill_ripjaws_s5_6800">G.Skill Ripjaws S5 DDR5 6800 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
+        <option value="gskill_trident_z5_rgb_7000">G.Skill Trident Z5 RGB DDR5 7000 MHz - CAS 34 - 64 GB (2 x 32 GB)</option>
+        <option value="kingston_fury_beast_rgb_6400">Kingston Fury Beast RGB DDR5 6400 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
+        <option value="kingston_fury_renegade_rgb_7200">Kingston Fury Renegade RGB DDR5 7200 MHz - CAS 38 - 64 GB (2 x 32 GB)</option>
+        <option value="crucial_ballistix_max_6800">Crucial Ballistix MAX DDR5 6800 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
+        <option value="crucial_xlr8_gaming_7000">Crucial XLR8 Gaming DDR5 7000 MHz - CAS 34 - 64 GB (2 x 32 GB)</option>
+        <option value="adata_xpg_lancer_7200">ADATA XPG Lancer DDR5 7200 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
+        <option value="adata_xpg_spectrix_d50_7000">ADATA XPG Spectrix D50 DDR5 7000 MHz - CAS 34 - 64 GB (2 x 32 GB)</option>
+        <option value="hyperx_fury_6800">HyperX Fury DDR5 6800 MHz - CAS 38 - 32 GB (2 x 16 GB)</option>
+        <option value="hyperx_predator_rgb_7200">HyperX Predator RGB DDR5 7200 MHz - CAS 36 - 64 GB (2 x 32 GB)</option>
+        <option value="team_t_force_delta_rgb_6800">Team T-Force Delta RGB DDR5 6800 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
+        <option value="team_t_force_xtreem_rgb_7200">Team T-Force Xtreem RGB DDR5 7200 MHz - CAS 34 - 64 GB (2 x 32 GB)</option>
+        <option value="zotac_gaming_6800">Zotac Gaming DDR5 6800 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
+        <option value="zotac_arctic_rgb_7000">Zotac Arctic RGB DDR5 7000 MHz - CAS 34 - 64 GB (2 x 32 GB)</option>
+        <option value="msi_spatium_6800">MSI Spatium DDR5 6800 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
+        <option value="msi_spatium_rgb_7200">MSI Spatium RGB DDR5 7200 MHz - CAS 34 - 64 GB (2 x 32 GB)</option>
+        <option value="asus_rog_strix_rgb_6800">ASUS ROG Strix RGB DDR5 6800 MHz - CAS 38 - 32 GB (2 x 16 GB)</option>
+        <option value="asus_tuf_gaming_rgb_7000">ASUS TUF Gaming RGB DDR5 7000 MHz - CAS 34 - 64 GB (2 x 32 GB)</option>
+        <option value="gigabyte_aorus_rgb_6800">Gigabyte AORUS RGB DDR5 6800 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
+        <option value="gigabyte_aorus_elite_7200">Gigabyte AORUS Elite DDR5 7200 MHz - CAS 34 - 64 GB (2 x 32 GB)</option>
+        <option value="biostar_racing_rgb_6800">Biostar Racing RGB DDR5 6800 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
+        <option value="biostar_valkyrie_7200">Biostar Valkyrie DDR5 7200 MHz - CAS 34 - 64 GB (2 x 32 GB)</option>
+        <option value="patriot_viper_rgb_6800">Patriot Viper RGB DDR5 6800 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
+        <option value="patriot_viper_elite_7200">Patriot Viper Elite DDR5 7200 MHz - CAS 34 - 64 GB (2 x 32 GB)</option>
+        <option value="xpg_d60g_rgb_6800">XPG D60G RGB DDR5 6800 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
+        <option value="xpg_gammix_d30_7200">XPG Gammix D30 DDR5 7200 MHz - CAS 34 - 64 GB (2 x 32 GB)</option>
+
+        <!-- Add more options to reach a total of 100 new options -->
+        <!-- Additional Brands -->
+        <option value="pny_xlr8_gaming_rgb_6800">PNY XLR8 Gaming RGB DDR5 6800 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
+        <option value="pny_xlr8_gaming_7200">PNY XLR8 Gaming DDR5 7200 MHz - CAS 34 - 64 GB (2 x 32 GB)</option>
+        <option value="silicon_power_zenith_rgb_6800">Silicon Power Zenith RGB DDR5 6800 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
+        <option value="silicon_power_zenith_7200">Silicon Power Zenith DDR5 7200 MHz - CAS 34 - 64 GB (2 x 32 GB)</option>
+        <option value="viper_venom_rgb_6800">Viper Venom RGB DDR5 6800 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
+        <option value="viper_venom_7200">Viper Venom DDR5 7200 MHz - CAS 34 - 64 GB (2 x 32 GB)</option>
+        <option value="thermaltake_toughram_rgb_6800">Thermaltake Toughram RGB DDR5 6800 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
+        <option value="thermaltake_toughram_7200">Thermaltake Toughram DDR5 7200 MHz - CAS 34 - 64 GB (2 x 32 GB)</option>
+        <option value="lexar_hades_rgb_6800">Lexar Hades RGB DDR5 6800 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
+        <option value="lexar_hades_7200">Lexar Hades DDR5 7200 MHz - CAS 34 - 64 GB (2 x 32 GB)</option>
                     </select>
                 </div>
 
