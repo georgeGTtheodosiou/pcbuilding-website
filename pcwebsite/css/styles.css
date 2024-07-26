@@ -1,81 +1,105 @@
 /* General body styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif; /* Updated font for a more modern look */
     margin: 0;
     padding: 0;
-    background-color: #ffffff; /* Fallback background color */
-    /* Uncomment the next line to add a texture image if desired */
-    /* background-image: url('path/to/your/texture.png'); */
-    /* background-repeat: repeat; */
-    background: linear-gradient(135deg, #f06, #4a90e2); /* Diagonal gradient */
-    background-size: cover; /* Ensures the background gradient covers the entire body */
-    background-repeat: no-repeat; /* Prevents any unwanted repetition */
+    background-color: #f7f7f7; /* Soft grey background for the body */
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb); /* Light blue gradient for a calm feel */
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #333; /* Dark grey text color for contrast */
+    line-height: 1.6; /* Improve readability */
 }
 
 /* Header styles */
 header {
-    padding: 10px 20px;
-    color: white;
-    background-color: transparent; /* Transparent background for the header */
+    padding: 20px 0;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for the header */
+    backdrop-filter: blur(8px); /* Blur effect behind the header */
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for the header */
 }
 
 header h1 {
     margin: 0;
-    text-align: center;
+    font-size: 2.5em; /* Larger font size for the header */
+    font-weight: 700;
+    letter-spacing: 2px; /* Add spacing between letters */
 }
 
 nav {
-    text-align: center;
-    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 nav a {
-    color: white;
+    color: #fff;
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth color transition */
+    border-radius: 4px; /* Rounded corners */
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #333; /* Dark text on hover */
+    background-color: #fff; /* White background on hover */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Slight shadow on hover */
 }
 
 /* Main section styles */
 main {
-    padding: 20px;
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center; /* Center text alignment */
 }
 
 /* Form section styles */
 .form-section {
-    background-color: #000; /* Black background for the form section */
-    color: #fff; /* White text color for readability */
-    padding: 20px;
-    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    color: #333; /* Dark grey text color for readability */
+    padding: 30px;
+    border-radius: 12px; /* Larger rounded corners for a softer look */
     max-width: 600px;
-    margin: 0 auto; /* Center the form section */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
-    opacity: 0.9; /* Slight transparency for a sleek look */
+    margin: 30px auto; /* Center the form section with top margin */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    backdrop-filter: blur(8px); /* Add a blur effect behind the form */
+    transition: transform 0.3s ease; /* Smooth transformation on hover */
+}
+
+.form-section:hover {
+    transform: translateY(-5px); /* Slight upward movement on hover */
 }
 
 /* Form group styles */
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 20px; /* Increased spacing between form elements */
 }
 
 .form-group label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     font-weight: bold;
+    font-size: 1.1em; /* Slightly larger font size for labels */
+    color: #555; /* Medium grey for a softer look */
 }
 
 .form-group select {
     width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    background-color: #333; /* Dark grey background for select boxes */
-    color: #fff; /* White text color */
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2); /* Inner shadow for input depth */
+    padding: 12px;
+    border: 1px solid #ddd; /* Light border for better contrast */
+    border-radius: 6px; /* Rounded corners */
+    background-color: #f7f7f7; /* Light grey background for select boxes */
+    color: #333;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Inner shadow for input depth */
+    transition: border-color 0.3s ease; /* Smooth border color transition */
+}
+
+.form-group select:focus {
+    border-color: #007BFF; /* Blue border on focus */
+    outline: none; /* Remove default outline */
 }
 
 /* Submit button styles */
@@ -90,10 +114,11 @@ main {
     color: white;
     font-size: 18px; /* Increased font size */
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Smooth transition effect */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Add shadow for button */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition effects */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for button */
 }
 
 .form-section button[type="submit"]:hover {
     background-color: #0056b3; /* Darker blue for hover effect */
+    transform: translateY(-3px); /* Slight upward movement on hover */
 }
