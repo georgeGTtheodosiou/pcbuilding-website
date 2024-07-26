@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff; /* White background for the body */
+   background-color: #f0f0f0; /* Light grey background for a softer look */
     /* background-image: url('https://www.icegif.com/wp-content/uploads/icegif-4383.gif'); */ /* Background image */
     background-size: cover; /* Ensures the background image covers the entire body */
     background-repeat: no-repeat; /* Prevents the image from repeating */
