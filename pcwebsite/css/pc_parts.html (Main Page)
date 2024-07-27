@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Parts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>PC Parts</h1>
+        <nav>
+            <ul>
+                <li><a href="#cpus">CPUs</a></li>
+                <li><a href="#gpus">GPUs</a></li>
+                <li><a href="#motherboards">Motherboards</a></li>
+                <li><a href="#memory">Memory</a></li>
+                <li><a href="#storage">Storage</a></li>
+                <li><a href="#psus">Power Supplies</a></li>
+                <li><a href="#cases">Cases</a></li>
+                <li><a href="#cooling">Cooling</a></li>
+                <li><a href="#peripherals">Peripherals</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="categories">
+            <h2>Component Categories</h2>
+            <div class="category">
+                <a href="cpu.html">
+                    <img src="cpu.jpg" alt="CPUs">
+                    <h3>CPUs</h3>
+                </a>
+            </div>
+            <div class="category">
+                <a href="gpu.html">
+                    <img src="gpu.jpg" alt="GPUs">
+                    <h3>GPUs</h3>
+                </a>
+            </div>
+            <!-- Add other categories similarly -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 PC Parts. All rights reserved.</p>
+    </footer>
+</body>
+</html>
