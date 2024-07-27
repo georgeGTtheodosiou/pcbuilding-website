@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example CPU</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>PC Parts</h1>
+        <nav>
+            <ul>
+                <li><a href="pc_parts.html">Home</a></li>
+                <li><a href="#cpus">CPUs</a></li>
+                <li><a href="#gpus">GPUs</a></li>
+                <!-- Add other categories as needed -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="product">
+            <h2>Example CPU</h2>
+            <img src="example-cpu.jpg" alt="Example CPU">
+            <div class="product-details">
+                <h3>Specifications</h3>
+                <ul>
+                    <li>Core Count: 8</li>
+                    <li>Base Clock: 3.6 GHz</li>
+                    <li>Boost Clock: 4.4 GHz</li>
+                    <li>Socket Type: AM4</li>
+                    <!-- Add more specifications as needed -->
+                </ul>
+                <h3>Description</h3>
+                <p>This is an example CPU designed for high-performance computing. It features 8 cores and 16 threads, making it ideal for gaming and content creation.</p>
+                <h3>Price</h3>
+                <p>$299.99</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 PC Parts. All rights reserved.</p>
+    </footer>
+</body>
+</html>
