@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPUs</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+        header h1, footer p {
+            margin: 0;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+        }
+        .gpu-item {
+            background-color: #fff;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+        }
+        .gpu-item img {
+            max-width: 120px;
+            margin-right: 15px;
+        }
+        .gpu-item h3 {
+            margin: 0 0 10px;
+        }
+        .gpu-item p {
+            margin: 0;
+        }
+        .gpu-item .gpu-details {
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PC Parts</h1>
+        <nav>
+            <ul>
+                <li><a href="pc_parts.html">Home</a></li>
+                <li><a href="#nvidia">NVIDIA GPUs</a></li>
+                <li><a href="#amd">AMD GPUs</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="nvidia">
+            <h2>NVIDIA GPUs</h2>
+            <!-- NVIDIA GPUs with images -->
+            <div class="gpu-item">
+                <img src="https://m.media-amazon.com/images/I/71q2d8+e41L._AC_SL1500_.jpg" alt="NVIDIA GeForce RTX 3080">
+                <div class="gpu-details">
+                    <h3>NVIDIA GeForce RTX 3080</h3>
+                    <p>Memory: 10 GB GDDR6X | Boost Clock: 1.71 GHz | CUDA Cores: 8704</p>
+                </div>
+            </div>
+            <div class="gpu-item">
+                <img src="https://m.media-amazon.com/images/I/81E2lT+DMOL._AC_SL1500_.jpg" alt="NVIDIA GeForce RTX 3090">
+                <div class="gpu-details">
+                    <h3>NVIDIA GeForce RTX 3090</h3>
+                    <p>Memory: 24 GB GDDR6X | Boost Clock: 1.70 GHz | CUDA Cores: 10496</p>
+                </div>
+            </div>
+            <div class="gpu-item">
+                <img src="https://m.media-amazon.com/images/I/71Trs0yNm1L._AC_SL1500_.jpg" alt="NVIDIA GeForce RTX 3070">
+                <div class="gpu-details">
+                    <h3>NVIDIA GeForce RTX 3070</h3>
+                    <p>Memory: 8 GB GDDR6 | Boost Clock: 1.73 GHz | CUDA Cores: 5888</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="amd">
+            <h2>AMD GPUs</h2>
+            <!-- AMD GPUs with images -->
+            <div class="gpu-item">
+                <img src="https://m.media-amazon.com/images/I/71rXSVqET9L._AC_SL1500_.jpg" alt="AMD Radeon RX 6800 XT">
+                <div class="gpu-details">
+                    <h3>AMD Radeon RX 6800 XT</h3>
+                    <p>Memory: 16 GB GDDR6 | Boost Clock: 2.25 GHz | Stream Processors: 4608</p>
+                </div>
+            </div>
+            <div class="gpu-item">
+                <img src="https://m.media-amazon.com/images/I/71u6pAmOh6L._AC_SL1500_.jpg" alt="AMD Radeon RX 6900 XT">
+                <div class="gpu-details">
+                    <h3>AMD Radeon RX 6900 XT</h3>
+                    <p>Memory: 16 GB GDDR6 | Boost Clock: 2.25 GHz | Stream Processors: 5120</p>
+                </div>
+            </div>
+            <div class="gpu-item">
+                <img src="https://m.media-amazon.com/images/I/81FMpiwPM7L._AC_SL1500_.jpg" alt="AMD Radeon RX 6700 XT">
+                <div class="gpu-details">
+                    <h3>AMD Radeon RX 6700 XT</h3>
+                    <p>Memory: 12 GB GDDR6 | Boost Clock: 2.58 GHz | Stream Processors: 2560</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 PC Parts. All rights reserved.</p>
+    </footer>
+</body>
+</html>
