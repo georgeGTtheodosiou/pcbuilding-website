@@ -9,6 +9,14 @@
 <body>
     <header>
         <h1>PC Parts</h1>
+<nav>
+            <ul>
+                <li><a href="index.html">Build Your Own PC</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="pc-parts.html">PC Parts</a></li> <!-- Link to PC Parts page -->
+                <!-- Add other navigation links here if needed -->
+            </ul>
+        </nav>
         <nav>
             <ul>
                 <li><a href="#cpus">CPUs</a></li>
