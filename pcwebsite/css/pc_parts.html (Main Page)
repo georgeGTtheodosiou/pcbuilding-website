@@ -11,15 +11,10 @@
         <h1>PC Parts</h1>
         <nav>
             <ul>
-                <li><a href="#cpus">CPUs</a></li>
-                <li><a href="#gpus">GPUs</a></li>
-                <li><a href="#motherboards">Motherboards</a></li>
-                <li><a href="#memory">Memory</a></li>
-                <li><a href="#storage">Storage</a></li>
-                <li><a href="#psus">Power Supplies</a></li>
-                <li><a href="#cases">Cases</a></li>
-                <li><a href="#cooling">Cooling</a></li>
-                <li><a href="#peripherals">Peripherals</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="pc-parts.html">PC Parts</a></li>
+                <!-- Add other navigation links here if needed -->
             </ul>
         </nav>
     </header>
@@ -42,7 +37,8 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 PC Parts. All rights reserved.</p>
+        <p>&copy; 2024 My Website. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
+
