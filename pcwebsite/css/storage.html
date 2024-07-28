@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storage Options</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+        header h1, footer p {
+            margin: 0;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+        }
+        .storage-item {
+            background-color: #fff;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+        }
+        .storage-item img {
+            max-width: 120px;
+            margin-right: 15px;
+        }
+        .storage-item h3 {
+            margin: 0 0 10px;
+        }
+        .storage-item p {
+            margin: 0;
+        }
+        .storage-item .storage-details {
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PC Parts</h1>
+        <nav>
+            <ul>
+                <li><a href="pc_parts.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="storage">
+            <h2>Storage Options</h2>
+            <!-- Storage options with images -->
+            <div class="storage-item">
+                <img src="https://example.com/nvme_gen4_image.jpg" alt="Samsung 980 PRO 1TB">
+                <div class="storage-details">
+                    <h3>Samsung 980 PRO 1TB</h3>
+                    <p>Type: NVMe SSD | Interface: Gen 4 | Capacity: 1TB | Read Speed: 7000MB/s | Write Speed: 5000MB/s</p>
+                </div>
+            </div>
+            <div class="storage-item">
+                <img src="https://example.com/nvme_gen4_image.jpg" alt="WD Black SN850X 1TB">
+                <div class="storage-details">
+                    <h3>WD Black SN850X 1TB</h3>
+                    <p>Type: NVMe SSD | Interface: Gen 4 | Capacity: 1TB | Read Speed: 7300MB/s | Write Speed: 6300MB/s</p>
+                </div>
+            </div>
+            <div class="storage-item">
+                <img src="https://example.com/nvme_gen5_image.jpg" alt="Seagate FireCuda 530 1TB">
+                <div class="storage-details">
+                    <h3>Seagate FireCuda 530 1TB</h3>
+                    <p>Type: NVMe SSD | Interface: Gen 4 | Capacity: 1TB | Read Speed: 7300MB/s | Write Speed: 6900MB/s</p>
+                </div>
+            </div>
+            <div class="storage-item">
+                <img src="https://example.com/nvme_gen5_image.jpg" alt="Sabrent Rocket 4 Plus 2TB">
+                <div class="storage-details">
+                    <h3>Sabrent Rocket 4 Plus 2TB</h3>
+                    <p>Type: NVMe SSD | Interface: Gen 4 | Capacity: 2TB | Read Speed: 7100MB/s | Write Speed: 6600MB/s</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 PC Parts. All rights reserved.</p>
+    </footer>
+</body>
+</html>
