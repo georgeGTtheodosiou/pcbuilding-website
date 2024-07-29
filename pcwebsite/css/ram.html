@@ -4,85 +4,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DDR5 RAM Modules</title>
-    <link rel="stylesheet" href="pc-parts.css">
+    <link rel="stylesheet" href="styles.css">
     <style>
-        /* General styles */
-        body {
-            font-family: Arial, sans-serif;
+        /* Reset some default browser styles */
+        body, h1, h2, h3, p, ul, li, img, a {
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-        }
-        header, footer {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            text-align: center; /* Center text in header and footer */
-        }
-        header h1, footer p {
-            margin: 0;
-        }
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            text-align: center; /* Center navigation links */
-        }
-        nav ul li {
-            display: inline;
-            margin-right: 10px;
-        }
-        nav ul li a {
-            color: #fff;
+            list-style: none;
             text-decoration: none;
         }
-        main {
-            padding: 20px;
-            max-width: 1200px;
-            margin: auto; /* Center content horizontally */
+
+        /* General styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
         }
-        #ddr5 h2 {
-            text-align: center; /* Center the section title */
-            margin-bottom: 20px;
+
+        header {
+            background: linear-gradient(to right, #007BFF, #00C6FF);
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
         }
-        .ram-item {
-            background-color: #fff;
-            margin-bottom: 20px;
-            padding: 15px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        nav ul {
             display: flex;
-            align-items: center;
-            justify-content: space-between; /* Align items in a row */
+            justify-content: center;
+            padding: 0;
+            margin: 1rem 0 0;
         }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 1rem;
+            transition: color 0.3s ease, text-shadow 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #FFD700;
+            text-shadow: 0 0 5px rgba(255, 215, 0, 0.7);
+        }
+
+        main {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        #ddr5 h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .ram-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: space-around;
+        }
+
+        .ram-item {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: calc(33.333% - 1.5rem);
+            text-align: center;
+            padding: 1rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
         .ram-item img {
-            max-width: 120px;
+            max-width: 100%;
             height: auto;
-            margin-right: 15px;
+            margin-bottom: 1rem;
+            border-radius: 8px;
         }
-        .ram-item .ram-details {
-            flex: 1;
-        }
+
         .ram-item h3 {
-            margin: 0 0 10px;
+            margin-bottom: 0.5rem;
+            color: #333;
+            font-size: 1.25rem;
         }
+
         .ram-item p {
             margin: 0;
         }
+
+        .ram-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
         footer {
-            margin-top: 20px; /* Add some space above footer */
+            background: linear-gradient(to right, #333, #555);
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
         }
 
         /* Media Queries for Mobile Responsiveness */
         @media (max-width: 768px) {
             .ram-item {
-                flex-direction: column;
-                text-align: center; /* Center text in ram-item on small screens */
-                align-items: center; /* Center items horizontally */
+                width: calc(50% - 1.5rem);
             }
-            .ram-item img {
-                margin-right: 0; /* Remove right margin for images on small screens */
-                margin-bottom: 10px; /* Add bottom margin for images */
+        }
+
+        @media (max-width: 480px) {
+            .ram-item {
+                width: calc(100% - 1.5rem);
             }
         }
     </style>
@@ -100,33 +145,35 @@
     <main>
         <section id="ddr5">
             <h2>DDR5 RAM Modules - 6000MT/s CAS 30 and Higher</h2>
-            <!-- DDR5 RAM modules with images -->
-            <div class="ram-item">
-                <img src="https://m.media-amazon.com/images/I/61EVf-QxpvL._AC_UF1000,1000_QL80_.jpg" alt="Corsair Vengeance 32GB">
-                <div class="ram-details">
-                    <h3>Corsair Vengeance 32GB</h3>
-                    <p>Type: DDR5 | Capacity: 32GB | Speed: 6000MT/s | CAS Latency: 30</p>
+            <div class="ram-items">
+                <!-- DDR5 RAM modules with images -->
+                <div class="ram-item">
+                    <img src="https://m.media-amazon.com/images/I/61EVf-QxpvL._AC_UF1000,1000_QL80_.jpg" alt="Corsair Vengeance 32GB">
+                    <div class="ram-details">
+                        <h3>Corsair Vengeance 32GB</h3>
+                        <p>Type: DDR5 | Capacity: 32GB | Speed: 6000MT/s | CAS Latency: 30</p>
+                    </div>
                 </div>
-            </div>
-            <div class="ram-item">
-                <img src="https://m.media-amazon.com/images/I/61bc6zvEIIL._AC_UF1000,1000_QL80_.jpg" alt="G.Skill Trident Z5 RGB 32GB">
-                <div class="ram-details">
-                    <h3>G.Skill Trident Z5 RGB 32GB</h3>
-                    <p>Type: DDR5 | Capacity: 32GB | Speed: 6400MT/s | CAS Latency: 32</p>
+                <div class="ram-item">
+                    <img src="https://m.media-amazon.com/images/I/61bc6zvEIIL._AC_UF1000,1000_QL80_.jpg" alt="G.Skill Trident Z5 RGB 32GB">
+                    <div class="ram-details">
+                        <h3>G.Skill Trident Z5 RGB 32GB</h3>
+                        <p>Type: DDR5 | Capacity: 32GB | Speed: 6400MT/s | CAS Latency: 32</p>
+                    </div>
                 </div>
-            </div>
-            <div class="ram-item">
-                <img src="https://media.kingston.com/kingston/product/FURY_Beast_Black_DDR5_2_angle-sm.jpg" alt="Kingston Fury Beast 32GB">
-                <div class="ram-details">
-                    <h3>Kingston Fury Beast 32GB</h3>
-                    <p>Type: DDR5 | Capacity: 32GB | Speed: 6600MT/s | CAS Latency: 34</p>
+                <div class="ram-item">
+                    <img src="https://media.kingston.com/kingston/product/FURY_Beast_Black_DDR5_2_angle-sm.jpg" alt="Kingston Fury Beast 32GB">
+                    <div class="ram-details">
+                        <h3>Kingston Fury Beast 32GB</h3>
+                        <p>Type: DDR5 | Capacity: 32GB | Speed: 6600MT/s | CAS Latency: 34</p>
+                    </div>
                 </div>
-            </div>
-            <div class="ram-item">
-                <img src="https://www.bhphotovideo.com/images/images1000x1000/crucial_cp2k16g60c36u5w_pro_ddr5_ram_32gb_1826529.jpg" alt="Crucial Ballistix Max 32GB">
-                <div class="ram-details">
-                    <h3>Crucial Ballistix Max 32GB</h3>
-                    <p>Type: DDR5 | Capacity: 32GB | Speed: 6800MT/s | CAS Latency: 36</p>
+                <div class="ram-item">
+                    <img src="https://www.bhphotovideo.com/images/images1000x1000/crucial_cp2k16g60c36u5w_pro_ddr5_ram_32gb_1826529.jpg" alt="Crucial Ballistix Max 32GB">
+                    <div class="ram-details">
+                        <h3>Crucial Ballistix Max 32GB</h3>
+                        <p>Type: DDR5 | Capacity: 32GB | Speed: 6800MT/s | CAS Latency: 36</p>
+                    </div>
                 </div>
             </div>
         </section>
