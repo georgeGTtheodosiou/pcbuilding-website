@@ -1,1 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSUs</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+        header h1, footer p {
+            margin: 0;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+        }
+        .psu-item {
+            background-color: #fff;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+        }
+        .psu-item img {
+            max-width: 120px;
+            margin-right: 15px;
+        }
+        .psu-item h3 {
+            margin: 0 0 10px;
+        }
+        .psu-item p {
+            margin: 0;
+        }
+        .psu-item .psu-details {
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PC Parts</h1>
+        <nav>
+            <ul>
+                <li><a href="pc_parts.html">Home</a></li>
+                <li><a href="#atx">ATX PSUs</a></li>
+                <li><a href="#sfx">SFX PSUs</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="atx">
+            <h2>ATX PSUs</h2>
+            <!-- ATX PSUs with images -->
+            <div class="psu-item">
+                <img src="https://example.com/images/psu1.jpg" alt="Corsair RM850x">
+                <div class="psu-details">
+                    <h3>Corsair RM850x</h3>
+                    <p>Wattage: 850W | Certification: 80 PLUS Gold | Modular: Fully Modular</p>
+                </div>
+            </div>
+            <div class="psu-item">
+                <img src="https://example.com/images/psu2.jpg" alt="EVGA SuperNOVA 750 G5">
+                <div class="psu-details">
+                    <h3>EVGA SuperNOVA 750 G5</h3>
+                    <p>Wattage: 750W | Certification: 80 PLUS Gold | Modular: Fully Modular</p>
+                </div>
+            </div>
+            <div class="psu-item">
+                <img src="https://example.com/images/psu3.jpg" alt="Seasonic Focus Plus 750W">
+                <div class="psu-details">
+                    <h3>Seasonic Focus Plus 750W</h3>
+                    <p>Wattage: 750W | Certification: 80 PLUS Gold | Modular: Fully Modular</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="sfx">
+            <h2>SFX PSUs</h2>
+            <!-- SFX PSUs with images -->
+            <div class="psu-item">
+                <img src="https://example.com/images/psu4.jpg" alt="Corsair SF750">
+                <div class="psu-details">
+                    <h3>Corsair SF750</h3>
+                    <p>Wattage: 750W | Certification: 80 PLUS Platinum | Modular: Fully Modular</p>
+                </div>
+            </div>
+            <div class="psu-item">
+                <img src="https://example.com/images/psu5.jpg" alt="SilverStone SX700-PT">
+                <div class="psu-details">
+                    <h3>SilverStone SX700-PT</h3>
+                    <p>Wattage: 700W | Certification: 80 PLUS Platinum | Modular: Fully Modular</p>
+                </div>
+            </div>
+            <div class="psu-item">
+                <img src="https://example.com/images/psu6.jpg" alt="Cooler Master V650 SFX">
+                <div class="psu-details">
+                    <h3>Cooler Master V650 SFX</h3>
+                    <p>Wattage: 650W | Certification: 80 PLUS Gold | Modular: Fully Modular</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 PC Parts</p>
+    </footer>
+</body>
+</html>
 
