@@ -86,6 +86,10 @@ main {
     text-align: center;
     padding: 1rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .category img {
@@ -97,7 +101,7 @@ main {
 }
 
 .category h3 {
-    margin-top: 0;
+    margin: 0;
     color: #333;
     font-size: 1.25rem;
 }
@@ -131,10 +135,6 @@ footer {
 
     #categories {
         grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
-    }
-
-    .category {
-        width: auto; /* Remove specific width to fit new grid layout */
     }
 }
 
