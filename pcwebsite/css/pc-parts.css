@@ -1,5 +1,3 @@
-/* pc-parts.css */
-
 /* Reset some default browser styles */
 body, h1, h2, h3, p, ul, li, img, a {
     margin: 0;
@@ -66,10 +64,17 @@ main {
 }
 
 #categories {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
+    text-align: center;
+}
+
+#categories h2 {
+    grid-column: span 3;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #333;
 }
 
 .category {
@@ -77,7 +82,6 @@ main {
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: calc(33.333% - 1.5rem);
     text-align: center;
     padding: 1rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -124,8 +128,12 @@ footer {
         margin: 0.5rem 0;
     }
 
+    #categories {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .category {
-        width: calc(50% - 1.5rem);
+        width: auto; /* Remove specific width to fit new grid layout */
     }
 }
 
@@ -138,7 +146,8 @@ footer {
         font-size: 0.9rem;
     }
 
-    .category {
-        width: calc(100% - 1.5rem);
+    #categories {
+        grid-template-columns: 1fr;
     }
 }
+
