@@ -6,6 +6,7 @@
     <title>DDR5 RAM Modules</title>
     <link rel="stylesheet" href="styles.css">
     <style>
+        /* General styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -16,6 +17,7 @@
             background-color: #333;
             color: #fff;
             padding: 10px;
+            text-align: center; /* Center text in header and footer */
         }
         header h1, footer p {
             margin: 0;
@@ -36,6 +38,10 @@
         main {
             padding: 20px;
         }
+        #ddr5 h2 {
+            text-align: center; /* Center the section title */
+            margin-bottom: 20px;
+        }
         .ram-item {
             background-color: #fff;
             margin-bottom: 20px;
@@ -44,10 +50,15 @@
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
             display: flex;
             align-items: center;
+            flex-wrap: wrap; /* Ensure items wrap on smaller screens */
         }
         .ram-item img {
             max-width: 120px;
             margin-right: 15px;
+            flex-shrink: 0; /* Prevent image from shrinking */
+        }
+        .ram-item .ram-details {
+            flex: 1;
         }
         .ram-item h3 {
             margin: 0 0 10px;
@@ -55,8 +66,20 @@
         .ram-item p {
             margin: 0;
         }
-        .ram-item .ram-details {
-            max-width: 600px;
+        footer {
+            margin-top: 20px; /* Add some space above footer */
+        }
+
+        /* Media Queries for Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .ram-item {
+                flex-direction: column;
+                text-align: center; /* Center text in ram-item on small screens */
+            }
+            .ram-item img {
+                margin-right: 0; /* Remove right margin for images on small screens */
+                margin-bottom: 10px; /* Add bottom margin for images */
+            }
         }
     </style>
 </head>
