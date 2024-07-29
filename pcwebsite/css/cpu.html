@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CPUs</title>
-   <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
     <style>
         /* Reset some default browser styles */
         body, h1, h2, h3, p, ul, li, img, a {
@@ -64,48 +64,42 @@
             margin: auto;
         }
 
-        #ddr5 h2 {
-            text-align: center;
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
+        section {
+            margin-bottom: 2rem;
         }
 
-        .ram-items {
+        .cpu-item {
             display: flex;
-            flex-wrap: wrap;
-            gap: 1.5rem;
-            justify-content: space-around;
-        }
-
-        .ram-item {
+            flex-direction: column;
             background: #fff;
             border: 1px solid #ddd;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             width: calc(33.333% - 1.5rem);
+            margin-bottom: 1.5rem;
             text-align: center;
             padding: 1rem;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .ram-item img {
+        .cpu-item img {
             max-width: 100%;
             height: auto;
             margin-bottom: 1rem;
             border-radius: 8px;
         }
 
-        .ram-item h3 {
+        .cpu-item h3 {
             margin-bottom: 0.5rem;
             color: #333;
             font-size: 1.25rem;
         }
 
-        .ram-item p {
+        .cpu-item p {
             margin: 0;
         }
 
-        .ram-item:hover {
+        .cpu-item:hover {
             transform: translateY(-5px);
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
         }
@@ -120,13 +114,13 @@
 
         /* Media Queries for Mobile Responsiveness */
         @media (max-width: 768px) {
-            .ram-item {
+            .cpu-item {
                 width: calc(50% - 1.5rem);
             }
         }
 
         @media (max-width: 480px) {
-            .ram-item {
+            .cpu-item {
                 width: calc(100% - 1.5rem);
             }
         }
@@ -147,52 +141,39 @@
     <main>
         <section id="am4">
             <h2>AM4 CPUs</h2>
-            <!-- AM4 CPUs with images -->
-            <div class="cpu-item">
-                <img src="https://needy.shop/cdn/shop/products/ryzen55600x_700x700.jpg?v=1645185202" alt="AMD Ryzen 5 5600X">
-                <div class="cpu-details">
+            <div class="cpu-items">
+                <div class="cpu-item">
+                    <img src="https://needy.shop/cdn/shop/products/ryzen55600x_700x700.jpg?v=1645185202" alt="AMD Ryzen 5 5600X">
                     <h3>AMD Ryzen 5 5600X</h3>
                     <p>Core Count: 6 | Base Clock: 3.7 GHz | Boost Clock: 4.6 GHz</p>
                 </div>
-            </div>
-            <div class="cpu-item">
-                <img src="https://www.singular.com.cy/images/detailed/321/AMD_Ryzen_7_5800X_3.8_GHz_8-core_16_100-100000063WOF-800668.jpg" alt="AMD Ryzen 7 5800X">
-                <div class="cpu-details">
+                <div class="cpu-item">
+                    <img src="https://www.singular.com.cy/images/detailed/321/AMD_Ryzen_7_5800X_3.8_GHz_8-core_16_100-100000063WOF-800668.jpg" alt="AMD Ryzen 7 5800X">
                     <h3>AMD Ryzen 7 5800X</h3>
                     <p>Core Count: 8 | Base Clock: 3.8 GHz | Boost Clock: 4.7 GHz</p>
                 </div>
-            </div>
-            <div class="cpu-item">
-                <img src="https://m.media-amazon.com/images/I/51S-lEYQZJL._AC_UF894,1000_QL80_.jpg" alt="AMD Ryzen 9 5900X">
-                <div class="cpu-details">
+                <div class="cpu-item">
+                    <img src="https://m.media-amazon.com/images/I/51S-lEYQZJL._AC_UF894,1000_QL80_.jpg" alt="AMD Ryzen 9 5900X">
                     <h3>AMD Ryzen 9 5900X</h3>
                     <p>Core Count: 12 | Base Clock: 3.7 GHz | Boost Clock: 4.8 GHz</p>
                 </div>
-            </div>
-            <div class="cpu-item">
-                <img src="https://img.computerunivers.net/cp/images/400x400/201103065952000601900008L" alt="AMD Ryzen 9 5950X">
-                <div class="cpu-details">
+                <div class="cpu-item">
+                    <img src="https://img.computerunivers.net/cp/images/400x400/201103065952000601900008L" alt="AMD Ryzen 9 5950X">
                     <h3>AMD Ryzen 9 5950X</h3>
                     <p>Core Count: 16 | Base Clock: 3.4 GHz | Boost Clock: 4.9 GHz</p>
                 </div>
-            </div>
-            <div class="cpu-item">
-                <img src="https://img.computerunivers.net/cp/images/1000x1000/190708073341100601900002G" alt="AMD Ryzen 5 3600">
-                <div class="cpu-details">
+                <div class="cpu-item">
+                    <img src="https://img.computerunivers.net/cp/images/1000x1000/190708073341100601900002G" alt="AMD Ryzen 5 3600">
                     <h3>AMD Ryzen 5 3600</h3>
                     <p>Core Count: 6 | Base Clock: 3.6 GHz | Boost Clock: 4.2 GHz</p>
                 </div>
-            </div>
-            <div class="cpu-item">
-                <img src="https://images-na.ssl-images-amazon.com/images/I/51mYUHhRQdL._MCnd_AC_SR462,462_.jpg" alt="AMD Ryzen 7 3700X">
-                <div class="cpu-details">
+                <div class="cpu-item">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/51mYUHhRQdL._MCnd_AC_SR462,462_.jpg" alt="AMD Ryzen 7 3700X">
                     <h3>AMD Ryzen 7 3700X</h3>
                     <p>Core Count: 8 | Base Clock: 3.6 GHz | Boost Clock: 4.4 GHz</p>
                 </div>
-            </div>
-            <div class="cpu-item">
-                <img src="https://www.guru3d.com/data/publish/220/e530696cf832512baea390739df58cbeb0b530/img_9456.jpg" alt="AMD Ryzen 9 3950X">
-                <div class="cpu-details">
+                <div class="cpu-item">
+                    <img src="https://www.guru3d.com/data/publish/220/e530696cf832512baea390739df58cbeb0b530/img_9456.jpg" alt="AMD Ryzen 9 3950X">
                     <h3>AMD Ryzen 9 3950X</h3>
                     <p>Core Count: 16 | Base Clock: 3.5 GHz | Boost Clock: 4.7 GHz</p>
                 </div>
@@ -201,88 +182,49 @@
 
         <section id="am5">
             <h2>AM5 CPUs</h2>
-            <!-- AM5 CPUs with images -->
-            <div class="cpu-item">
-                <img src="https://storage.googleapis.com/bionic_1626848719/products/22a258626debf50dd6bb8f7467f5838115a49b0d/banners/14800435_1686063336.jpg" alt="AMD Ryzen 7 7800X3D">
-                <div class="cpu-details">
+            <div class="cpu-items">
+                <div class="cpu-item">
+                    <img src="https://storage.googleapis.com/bionic_1626848719/products/22a258626debf50dd6bb8f7467f5838115a49b0d/banners/14800435_1686063336.jpg" alt="AMD Ryzen 7 7800X3D">
                     <h3>AMD Ryzen 7 7800X3D</h3>
                     <p>Core Count: 8 | Base Clock: 4.0 GHz | Boost Clock: 5.0 GHz</p>
                 </div>
-            </div>
-            <div class="cpu-item">
-                <img src="https://www.amd.com/content/dam/amd/en/images/products/processors/ryzen/2505503-ryzen-9-7900x.jpg" alt="AMD Ryzen 9 7900X">
-                <div class="cpu-details">
+                <div class="cpu-item">
+                    <img src="https://www.amd.com/content/dam/amd/en/images/products/processors/ryzen/2505503-ryzen-9-7900x.jpg" alt="AMD Ryzen 9 7900X">
                     <h3>AMD Ryzen 9 7900X</h3>
                     <p>Core Count: 12 | Base Clock: 4.7 GHz | Boost Clock: 5.6 GHz</p>
                 </div>
-            </div>
-            <div class="cpu-item">
-                <img src="https://www.amd.com/content/dam/amd/en/images/products/processors/ryzen/2505503-ryzen-9-7900x.jpg" alt="AMD Ryzen 9 7950X">
-                <div class="cpu-details">
+                <div class="cpu-item">
+                    <img src="https://www.amd.com/system/files/2020-11/5950x-product-image-600x600.png" alt="AMD Ryzen 9 7950X">
                     <h3>AMD Ryzen 9 7950X</h3>
                     <p>Core Count: 16 | Base Clock: 4.2 GHz | Boost Clock: 5.7 GHz</p>
-                </div>
-            </div>
-            <div class="cpu-item">
-                <img src="https://www.amd.com/content/dam/amd/en/images/products/processors/ryzen/2505503-ryzen-7-7700x.jpg" alt="AMD Ryzen 7 7700X">
-                <div class="cpu-details">
-                    <h3>AMD Ryzen 7 7700X</h3>
-                    <p>Core Count: 8 | Base Clock: 4.5 GHz | Boost Clock: 5.4 GHz</p>
-                </div>
-            </div>
-            <div class="cpu-item">
-                <img src="data:image/jpeg;base64,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" alt="AMD Ryzen 5 7600X">
-                <div class="cpu-details">
-                    <h3>AMD Ryzen 5 7600X</h3>
-                    <p>Core Count: 6 | Base Clock: 4.7 GHz | Boost Clock: 5.3 GHz</p>
                 </div>
             </div>
         </section>
 
         <section id="lga1700">
             <h2>LGA 1700 CPUs</h2>
-            <!-- LGA 1700 CPUs with images -->
-            <div class="cpu-item">
-                <img src="https://dreamyshopcy.com/image/cache/catalog/dreamyshopcy/Store/All_Photos/product-20475-1000x1000.jpg" alt="Intel Core i5-12600K">
-                <div class="cpu-details">
+            <div class="cpu-items">
+                <div class="cpu-item">
+                    <img src="https://cdn1.expertmarketresearch.com/images/1645455825_10741841.jpg" alt="Intel Core i5-12600K">
                     <h3>Intel Core i5-12600K</h3>
                     <p>Core Count: 10 | Base Clock: 3.7 GHz | Boost Clock: 4.9 GHz</p>
                 </div>
-            </div>
-            <div class="cpu-item">
-                <img src="https://www.singular.com.cy/images/detailed/358/Intel_Core_i7_12700_2.1_GHz_12-core_20_BX8071512700-137709.jpg" alt="Intel Core i7-12700K">
-                <div class="cpu-details">
-                    <h3>Intel Core i7-12700K</h3>
-                    <p>Core Count: 12 | Base Clock: 3.6 GHz | Boost Clock: 5.0 GHz</p>
+                <div class="cpu-item">
+                    <img src="https://media.gamestorrents.org/2023/05/30/intel-core-i7-13700k-32-cpu.jpg" alt="Intel Core i7-13700K">
+                    <h3>Intel Core i7-13700K</h3>
+                    <p>Core Count: 16 | Base Clock: 3.4 GHz | Boost Clock: 5.4 GHz</p>
                 </div>
-            </div>
-            <div class="cpu-item">
-                <img src="https://armenius.com.cy/64512-large_default/intel-core-i9-12900k-boxed-desktop-cpu.jpg" alt="Intel Core i9-12900K">
-                <div class="cpu-details">
-                    <h3>Intel Core i9-12900K</h3>
-                    <p>Core Count: 16 | Base Clock: 3.2 GHz | Boost Clock: 5.2 GHz</p>
-                </div>
-            </div>
-            <div class="cpu-item">
-                <img src="https://img.computerunivers.net/cp/images/1000x1000/221005093836100501900010M" alt="Intel Core i9-13900K">
-                <div class="cpu-details">
+                <div class="cpu-item">
+                    <img src="https://static.techspot.com/images2/news/bigimage/2023/05/2023-05-25-image-4.jpg" alt="Intel Core i9-13900K">
                     <h3>Intel Core i9-13900K</h3>
                     <p>Core Count: 24 | Base Clock: 3.0 GHz | Boost Clock: 5.8 GHz</p>
                 </div>
             </div>
-            <div class="cpu-item">
-                <img src="https://www.singular.com.cy/images/detailed/360/2870748-l0.jpg" alt="Intel Core i5-13400F">
-                <div class="cpu-details">
-                    <h3>Intel Core i5-13400F</h3>
-                    <p>Core Count: 10 | Base Clock: 2.5 GHz | Boost Clock: 4.6 GHz</p>
-                </div>
-            </div>
         </section>
     </main>
+
     <footer>
-        <p>&copy; 2024 PC Parts. All rights reserved.</p>
+        <p>&copy; 2024 PC Parts Store</p>
     </footer>
 </body>
 </html>
-
-
