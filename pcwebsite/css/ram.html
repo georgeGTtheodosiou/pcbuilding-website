@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DDR5 RAM Modules</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="pc-parts.css">
     <style>
         /* General styles */
         body {
@@ -26,6 +26,7 @@
             list-style-type: none;
             margin: 0;
             padding: 0;
+            text-align: center; /* Center navigation links */
         }
         nav ul li {
             display: inline;
@@ -37,6 +38,8 @@
         }
         main {
             padding: 20px;
+            max-width: 1200px;
+            margin: auto; /* Center content horizontally */
         }
         #ddr5 h2 {
             text-align: center; /* Center the section title */
@@ -50,12 +53,12 @@
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
             display: flex;
             align-items: center;
-            flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+            justify-content: space-between; /* Align items in a row */
         }
         .ram-item img {
             max-width: 120px;
+            height: auto;
             margin-right: 15px;
-            flex-shrink: 0; /* Prevent image from shrinking */
         }
         .ram-item .ram-details {
             flex: 1;
@@ -75,6 +78,7 @@
             .ram-item {
                 flex-direction: column;
                 text-align: center; /* Center text in ram-item on small screens */
+                align-items: center; /* Center items horizontally */
             }
             .ram-item img {
                 margin-right: 0; /* Remove right margin for images on small screens */
