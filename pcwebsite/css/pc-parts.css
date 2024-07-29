@@ -75,6 +75,7 @@ main {
     margin-bottom: 1.5rem;
     font-size: 2rem;
     color: #333;
+    text-align: center;
 }
 
 .category {
@@ -127,14 +128,6 @@ footer {
     nav ul li {
         margin: 0.5rem 0;
     }
-
-    #categories {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .category {
-        width: auto; /* Remove specific width to fit new grid layout */
-    }
 }
 
 @media (max-width: 480px) {
@@ -145,9 +138,4 @@ footer {
     nav ul {
         font-size: 0.9rem;
     }
-
-    #categories {
-        grid-template-columns: 1fr;
-    }
 }
-
