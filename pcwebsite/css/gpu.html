@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GPUs</title>
-  <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
     <style>
         /* Reset some default browser styles */
         body, h1, h2, h3, p, ul, li, img, a {
@@ -64,48 +64,48 @@
             margin: auto;
         }
 
-        #ddr5 h2 {
+        #gpus h2 {
             text-align: center;
             font-size: 2rem;
             margin-bottom: 1.5rem;
         }
 
-        .ram-items {
-            display: flex;
-            flex-wrap: wrap;
+        .gpu-items {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Two columns */
             gap: 1.5rem;
-            justify-content: space-around;
         }
 
-        .ram-item {
+        .gpu-item {
+            display: flex;
+            flex-direction: column;
             background: #fff;
             border: 1px solid #ddd;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: calc(33.333% - 1.5rem);
             text-align: center;
             padding: 1rem;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .ram-item img {
+        .gpu-item img {
             max-width: 100%;
             height: auto;
             margin-bottom: 1rem;
             border-radius: 8px;
         }
 
-        .ram-item h3 {
+        .gpu-item h3 {
             margin-bottom: 0.5rem;
             color: #333;
             font-size: 1.25rem;
         }
 
-        .ram-item p {
+        .gpu-item p {
             margin: 0;
         }
 
-        .ram-item:hover {
+        .gpu-item:hover {
             transform: translateY(-5px);
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
         }
@@ -120,14 +120,14 @@
 
         /* Media Queries for Mobile Responsiveness */
         @media (max-width: 768px) {
-            .ram-item {
-                width: calc(50% - 1.5rem);
+            .gpu-items {
+                grid-template-columns: 1fr; /* Single column on smaller screens */
             }
         }
 
         @media (max-width: 480px) {
-            .ram-item {
-                width: calc(100% - 1.5rem);
+            .gpu-items {
+                grid-template-columns: 1fr; /* Single column on very small screens */
             }
         }
     </style>
@@ -150,93 +150,95 @@
             <!-- NVIDIA GPUs Section -->
             <h3>NVIDIA GPUs</h3>
             <h4>GeForce RTX 3000 Series</h4>
-            <div class="gpu-item">
-                <img src="https://www.guru3d.com/data/publish/220/1a3d9e751a2bbb2f371f5ef2f88ff2a1be7692/img_0987.jpg" alt="NVIDIA GeForce RTX 3090">
-                <div class="gpu-details">
-                    <h3>NVIDIA GeForce RTX 3090</h3>
-                    <p>CUDA Cores: 10496 | Base Clock: 1.40 GHz | Boost Clock: 1.70 GHz | Memory: 24 GB GDDR6X</p>
+            <div class="gpu-items">
+                <div class="gpu-item">
+                    <img src="https://www.guru3d.com/data/publish/220/1a3d9e751a2bbb2f371f5ef2f88ff2a1be7692/img_0987.jpg" alt="NVIDIA GeForce RTX 3090">
+                    <div class="gpu-details">
+                        <h3>NVIDIA GeForce RTX 3090</h3>
+                        <p>CUDA Cores: 10496 | Base Clock: 1.40 GHz | Boost Clock: 1.70 GHz | Memory: 24 GB GDDR6X</p>
+                    </div>
                 </div>
-            </div>
-            <div class="gpu-item">
-                <img src="https://www.igorslab.de/wp-content/uploads/2020/09/Box-Open.jpg" alt="NVIDIA GeForce RTX 3080">
-                <div class="gpu-details">
-                    <h3>NVIDIA GeForce RTX 3080</h3>
-                    <p>CUDA Cores: 8704 | Base Clock: 1.44 GHz | Boost Clock: 1.71 GHz | Memory: 10 GB GDDR6X</p>
+                <div class="gpu-item">
+                    <img src="https://www.igorslab.de/wp-content/uploads/2020/09/Box-Open.jpg" alt="NVIDIA GeForce RTX 3080">
+                    <div class="gpu-details">
+                        <h3>NVIDIA GeForce RTX 3080</h3>
+                        <p>CUDA Cores: 8704 | Base Clock: 1.44 GHz | Boost Clock: 1.71 GHz | Memory: 10 GB GDDR6X</p>
+                    </div>
                 </div>
-            </div>
-            <div class="gpu-item">
-                <img src="https://www.igorslab.de/wp-content/uploads/2020/10/Box-Open.jpg" alt="NVIDIA GeForce RTX 3070">
-                <div class="gpu-details">
-                    <h3>NVIDIA GeForce RTX 3070</h3>
-                    <p>CUDA Cores: 5888 | Base Clock: 1.50 GHz | Boost Clock: 1.73 GHz | Memory: 8 GB GDDR6</p>
+                <div class="gpu-item">
+                    <img src="https://www.igorslab.de/wp-content/uploads/2020/10/Box-Open.jpg" alt="NVIDIA GeForce RTX 3070">
+                    <div class="gpu-details">
+                        <h3>NVIDIA GeForce RTX 3070</h3>
+                        <p>CUDA Cores: 5888 | Base Clock: 1.50 GHz | Boost Clock: 1.73 GHz | Memory: 8 GB GDDR6</p>
+                    </div>
                 </div>
-            </div>
-            <h4>GeForce RTX 4000 Series</h4>
-            <div class="gpu-item">
-                <img src="https://www.igorslab.de/wp-content/uploads/2022/10/Box-Open-ISO.jpg" alt="NVIDIA GeForce RTX 4090">
-                <div class="gpu-details">
-                    <h3>NVIDIA GeForce RTX 4090</h3>
-                    <p>CUDA Cores: 16384 | Base Clock: 1.85 GHz | Boost Clock: 2.52 GHz | Memory: 24 GB GDDR6X</p>
+                <h4>GeForce RTX 4000 Series</h4>
+                <div class="gpu-item">
+                    <img src="https://www.igorslab.de/wp-content/uploads/2022/10/Box-Open-ISO.jpg" alt="NVIDIA GeForce RTX 4090">
+                    <div class="gpu-details">
+                        <h3>NVIDIA GeForce RTX 4090</h3>
+                        <p>CUDA Cores: 16384 | Base Clock: 1.85 GHz | Boost Clock: 2.52 GHz | Memory: 24 GB GDDR6X</p>
+                    </div>
                 </div>
-            </div>
-            <div class="gpu-item">
-                <img src="https://www.igorslab.de/wp-content/uploads/2022/11/Box-Open.jpg" alt="NVIDIA GeForce RTX 4080">
-                <div class="gpu-details">
-                    <h3>NVIDIA GeForce RTX 4080</h3>
-                    <p>CUDA Cores: 9728 | Base Clock: 2.21 GHz | Boost Clock: 2.51 GHz | Memory: 16 GB GDDR6X</p>
+                <div class="gpu-item">
+                    <img src="https://www.igorslab.de/wp-content/uploads/2022/11/Box-Open.jpg" alt="NVIDIA GeForce RTX 4080">
+                    <div class="gpu-details">
+                        <h3>NVIDIA GeForce RTX 4080</h3>
+                        <p>CUDA Cores: 9728 | Base Clock: 2.21 GHz | Boost Clock: 2.51 GHz | Memory: 16 GB GDDR6X</p>
+                    </div>
                 </div>
-            </div>
-            <div class="gpu-item">
-                <img src="https://www.igorslab.de/wp-content/uploads/2023/04/Box-Open.jpg" alt="NVIDIA GeForce RTX 4070">
-                <div class="gpu-details">
-                    <h3>NVIDIA GeForce RTX 4070</h3>
-                    <p>CUDA Cores: 5888 | Base Clock: 1.92 GHz | Boost Clock: 2.48 GHz | Memory: 12 GB GDDR6X</p>
+                <div class="gpu-item">
+                    <img src="https://www.igorslab.de/wp-content/uploads/2023/04/Box-Open.jpg" alt="NVIDIA GeForce RTX 4070">
+                    <div class="gpu-details">
+                        <h3>NVIDIA GeForce RTX 4070</h3>
+                        <p>CUDA Cores: 5888 | Base Clock: 1.92 GHz | Boost Clock: 2.48 GHz | Memory: 12 GB GDDR6X</p>
+                    </div>
                 </div>
-            </div>
-            <!-- AMD GPUs Section -->
-            <h3>AMD GPUs</h3>
-            <h4>Radeon RX 6000 Series</h4>
-            <div class="gpu-item">
-                <img src="https://s.alicdn.com/@sc04/kf/H4fa6770069e84326b0e22a9c635c86caV.jpg_720x720q50.jpg" alt="AMD Radeon RX 6900 XT">
-                <div class="gpu-details">
-                    <h3>AMD Radeon RX 6900 XT</h3>
-                    <p>Stream Processors: 5120 | Base Clock: 1.82 GHz | Boost Clock: 2.25 GHz | Memory: 16 GB GDDR6</p>
+                <!-- AMD GPUs Section -->
+                <h3>AMD GPUs</h3>
+                <h4>Radeon RX 6000 Series</h4>
+                <div class="gpu-item">
+                    <img src="https://s.alicdn.com/@sc04/kf/H4fa6770069e84326b0e22a9c635c86caV.jpg_720x720q50.jpg" alt="AMD Radeon RX 6900 XT">
+                    <div class="gpu-details">
+                        <h3>AMD Radeon RX 6900 XT</h3>
+                        <p>Stream Processors: 5120 | Base Clock: 1.82 GHz | Boost Clock: 2.25 GHz | Memory: 16 GB GDDR6</p>
+                    </div>
                 </div>
-            </div>
-            <div class="gpu-item">
-                <img src="https://www.guru3d.com/data/publish/220/35a68abcaf328a949946a048ab5ce5fe00030f/img_1386.jpg" alt="AMD Radeon RX 6800 XT">
-                <div class="gpu-details">
-                    <h3>AMD Radeon RX 6800 XT</h3>
-                    <p>Stream Processors: 4608 | Base Clock: 1.82 GHz | Boost Clock: 2.25 GHz | Memory: 16 GB GDDR6</p>
+                <div class="gpu-item">
+                    <img src="https://www.guru3d.com/data/publish/220/35a68abcaf328a949946a048ab5ce5fe00030f/img_1386.jpg" alt="AMD Radeon RX 6800 XT">
+                    <div class="gpu-details">
+                        <h3>AMD Radeon RX 6800 XT</h3>
+                        <p>Stream Processors: 4608 | Base Clock: 1.82 GHz | Boost Clock: 2.25 GHz | Memory: 16 GB GDDR6</p>
+                    </div>
                 </div>
-            </div>
-            <div class="gpu-item">
-                <img src="https://www.igorslab.de/wp-content/uploads/2021/03/Intro-2.jpg" alt="AMD Radeon RX 6700 XT">
-                <div class="gpu-details">
-                    <h3>AMD Radeon RX 6700 XT</h3>
-                    <p>Stream Processors: 2560 | Base Clock: 2.32 GHz | Boost Clock: 2.58 GHz | Memory: 12 GB GDDR6</p>
+                <div class="gpu-item">
+                    <img src="https://www.igorslab.de/wp-content/uploads/2021/03/Intro-2.jpg" alt="AMD Radeon RX 6700 XT">
+                    <div class="gpu-details">
+                        <h3>AMD Radeon RX 6700 XT</h3>
+                        <p>Stream Processors: 2560 | Base Clock: 2.32 GHz | Boost Clock: 2.58 GHz | Memory: 12 GB GDDR6</p>
+                    </div>
                 </div>
-            </div>
-            <h4>Radeon RX 7000 Series</h4>
-            <div class="gpu-item">
-                <img src="https://www.igorslab.de/wp-content/uploads/2022/12/Box-Open.jpg" alt="AMD Radeon RX 7900 XTX">
-                <div class="gpu-details">
-                    <h3>AMD Radeon RX 7900 XTX</h3>
-                    <p>Stream Processors: 6144 | Base Clock: 1.85 GHz | Boost Clock: 2.5 GHz | Memory: 24 GB GDDR6</p>
+                <h4>Radeon RX 7000 Series</h4>
+                <div class="gpu-item">
+                    <img src="https://www.igorslab.de/wp-content/uploads/2022/12/Box-Open.jpg" alt="AMD Radeon RX 7900 XTX">
+                    <div class="gpu-details">
+                        <h3>AMD Radeon RX 7900 XTX</h3>
+                        <p>Stream Processors: 6144 | Base Clock: 1.85 GHz | Boost Clock: 2.5 GHz | Memory: 24 GB GDDR6</p>
+                    </div>
                 </div>
-            </div>
-            <div class="gpu-item">
-                <img src="https://www.techpowerup.com/review/amd-navi-31-radeon-rx-7900-xtx-and-xt-unboxing/images/xt-package3.jpg" alt="AMD Radeon RX 7900 XT">
-                <div class="gpu-details">
-                    <h3>AMD Radeon RX 7900 XT</h3>
-                    <p>Stream Processors: 5376 | Base Clock: 1.85 GHz | Boost Clock: 2.4 GHz | Memory: 20 GB GDDR6</p>
+                <div class="gpu-item">
+                    <img src="https://www.techpowerup.com/review/amd-navi-31-radeon-rx-7900-xtx-and-xt-unboxing/images/xt-package3.jpg" alt="AMD Radeon RX 7900 XT">
+                    <div class="gpu-details">
+                        <h3>AMD Radeon RX 7900 XT</h3>
+                        <p>Stream Processors: 5376 | Base Clock: 1.85 GHz | Boost Clock: 2.4 GHz | Memory: 20 GB GDDR6</p>
+                    </div>
                 </div>
-            </div>
-            <div class="gpu-item">
-                <img src="https://www.igorslab.de/wp-content/uploads/2023/09/Intro-980x678.jpg" alt="AMD Radeon RX 7800 XT">
-                <div class="gpu-details">
-                    <h3>AMD Radeon RX 7800 XT</h3>
-                    <p>Stream Processors: 3840 | Base Clock: 1.5 GHz | Boost Clock: 2.39 GHz | Memory: 16 GB GDDR6</p>
+                <div class="gpu-item">
+                    <img src="https://www.igorslab.de/wp-content/uploads/2023/09/Intro-980x678.jpg" alt="AMD Radeon RX 7800 XT">
+                    <div class="gpu-details">
+                        <h3>AMD Radeon RX 7800 XT</h3>
+                        <p>Stream Processors: 3840 | Base Clock: 1.5 GHz | Boost Clock: 2.39 GHz | Memory: 16 GB GDDR6</p>
+                    </div>
                 </div>
             </div>
         </section>
