@@ -82,7 +82,7 @@
             border: 1px solid #ddd;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: calc(33.333% - 1.5rem);
+            width: calc(25% - 1.5rem); /* Adjusted to fit 4 items per row */
             text-align: center;
             padding: 1rem;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -121,13 +121,13 @@
         /* Media Queries for Mobile Responsiveness */
         @media (max-width: 768px) {
             .ram-item {
-                width: calc(50% - 1.5rem);
+                width: calc(50% - 1.5rem); /* Two items per row */
             }
         }
 
         @media (max-width: 480px) {
             .ram-item {
-                width: calc(100% - 1.5rem);
+                width: calc(100% - 1.5rem); /* Single item per row */
             }
         }
     </style>
@@ -138,41 +138,56 @@
         <nav>
             <ul>
                 <li><a href="pc_parts.html">Home</a></li>
+                <li><a href="gpu.html">GPUs</a></li>
+                <li><a href="cpu.html">CPUs</a></li>
+                <li><a href="ram.html">RAM</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section id="ddr5">
-            <h2>DDR5 RAM Modules </h2>
+            <h2>DDR5 RAM Modules</h2>
             <div class="ram-items">
                 <!-- DDR5 RAM modules with images -->
                 <div class="ram-item">
                     <img src="https://m.media-amazon.com/images/I/61EVf-QxpvL._AC_UF1000,1000_QL80_.jpg" alt="Corsair Vengeance 32GB">
-                    <div class="ram-details">
-                        <h3>Corsair Vengeance 32GB</h3>
-                        <p>Type: DDR5 | Capacity: 32GB | Speed: 6000MT/s | CAS Latency: 30</p>
-                    </div>
+                    <h3>Corsair Vengeance 32GB</h3>
+                    <p>Type: DDR5 | Capacity: 32GB | Speed: 6000MT/s | CAS Latency: 30</p>
                 </div>
                 <div class="ram-item">
                     <img src="https://m.media-amazon.com/images/I/61bc6zvEIIL._AC_UF1000,1000_QL80_.jpg" alt="G.Skill Trident Z5 RGB 32GB">
-                    <div class="ram-details">
-                        <h3>G.Skill Trident Z5 RGB 32GB</h3>
-                        <p>Type: DDR5 | Capacity: 32GB | Speed: 6400MT/s | CAS Latency: 32</p>
-                    </div>
+                    <h3>G.Skill Trident Z5 RGB 32GB</h3>
+                    <p>Type: DDR5 | Capacity: 32GB | Speed: 6400MT/s | CAS Latency: 32</p>
                 </div>
                 <div class="ram-item">
                     <img src="https://media.kingston.com/kingston/product/FURY_Beast_Black_DDR5_2_angle-sm.jpg" alt="Kingston Fury Beast 32GB">
-                    <div class="ram-details">
-                        <h3>Kingston Fury Beast 32GB</h3>
-                        <p>Type: DDR5 | Capacity: 32GB | Speed: 6600MT/s | CAS Latency: 34</p>
-                    </div>
+                    <h3>Kingston Fury Beast 32GB</h3>
+                    <p>Type: DDR5 | Capacity: 32GB | Speed: 6600MT/s | CAS Latency: 34</p>
                 </div>
                 <div class="ram-item">
                     <img src="https://www.bhphotovideo.com/images/images1000x1000/crucial_cp2k16g60c36u5w_pro_ddr5_ram_32gb_1826529.jpg" alt="Crucial Ballistix Max 32GB">
-                    <div class="ram-details">
-                        <h3>Crucial Ballistix Max 32GB</h3>
-                        <p>Type: DDR5 | Capacity: 32GB | Speed: 6800MT/s | CAS Latency: 36</p>
-                    </div>
+                    <h3>Crucial Ballistix Max 32GB</h3>
+                    <p>Type: DDR5 | Capacity: 32GB | Speed: 6800MT/s | CAS Latency: 36</p>
+                </div>
+                <div class="ram-item">
+                    <img src="https://m.media-amazon.com/images/I/51G8MxXY2BL._AC_UF894,1000_QL80_.jpg" alt="Corsair Dominator Platinum 16GB">
+                    <h3>Corsair Dominator Platinum 16GB</h3>
+                    <p>Type: DDR5 | Capacity: 16GB | Speed: 5200MT/s | CAS Latency: 38</p>
+                </div>
+                <div class="ram-item">
+                    <img src="https://www.corsair.com/medias/sys_master/images/images/h51/h99/8969787977934/CMH32GX5M2B5600C36-001.png" alt="Corsair Vengeance LPX 16GB">
+                    <h3>Corsair Vengeance LPX 16GB</h3>
+                    <p>Type: DDR5 | Capacity: 16GB | Speed: 5200MT/s | CAS Latency: 40</p>
+                </div>
+                <div class="ram-item">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/61r4Zw9t8HL._AC_UF894,1000_QL80_.jpg" alt="G.Skill Ripjaws S5 16GB">
+                    <h3>G.Skill Ripjaws S5 16GB</h3>
+                    <p>Type: DDR5 | Capacity: 16GB | Speed: 5600MT/s | CAS Latency: 36</p>
+                </div>
+                <div class="ram-item">
+                    <img src="https://media.kingston.com/kingston/product/FURY_Renegade_RGB_DDR5_2_angle-sm.jpg" alt="Kingston Fury Renegade RGB 16GB">
+                    <h3>Kingston Fury Renegade RGB 16GB</h3>
+                    <p>Type: DDR5 | Capacity: 16GB | Speed: 6000MT/s | CAS Latency: 32</p>
                 </div>
             </div>
         </section>
