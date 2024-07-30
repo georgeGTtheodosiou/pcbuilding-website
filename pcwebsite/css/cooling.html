@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooling Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset some default browser styles */
+        body, h1, h2, h3, p, ul, li, img, a {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        /* General styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(to right, #007BFF, #00C6FF);
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 1rem 0 0;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 1rem;
+            transition: color 0.3s ease, text-shadow 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #FFD700;
+            text-shadow: 0 0 5px rgba(255, 215, 0, 0.7);
+        }
+
+        main {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .cooling-category {
+            margin-bottom: 2rem;
+        }
+
+        .cooling-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: space-between;
+        }
+
+        .cooling-item {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: calc(33.333% - 1rem); /* 3 items per row */
+            text-align: center;
+            padding: 1rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .cooling-item img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+        }
+
+        .cooling-item h3 {
+            margin-bottom: 0.5rem;
+            color: #333;
+            font-size: 1.25rem;
+        }
+
+        .cooling-item p {
+            margin: 0;
+        }
+
+        .cooling-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background: linear-gradient(to right, #333, #555);
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        /* Media Queries for Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .cooling-item {
+                width: calc(50% - 1rem); /* 2 items per row */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .cooling-item {
+                width: calc(100% - 1rem); /* 1 item per row */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PC Parts</h1>
+        <nav>
+            <ul>
+                <li><a href="pc_parts.html">Home</a></li>
+                <li><a href="#cooling">Cooling</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="cooling">
+            <h2>Cooling Solutions</h2>
+            
+            <!-- Water Cooling -->
+            <div class="cooling-category">
+                <h2>Water Cooling</h2>
+                <div class="cooling-items">
+                    <div class="cooling-item">
+                        <img src="https://www.corsair.com/media/1766/one-h150i-elite-capellix-cpu-cooler.jpg" alt="Corsair H150i Elite Capellix">
+                        <h3>Corsair H150i Elite Capellix</h3>
+                        <p>Type: AIO | Radiator Size: 360mm | Fans: 3 x 120mm | Features: RGB Lighting</p>
+                    </div>
+                    <div class="cooling-item">
+                        <img src="https://www.noctua.at/en/products/cpu-cooler-retention-775-intel/nh-u12a" alt="NZXT Kraken X73">
+                        <h3>NZXT Kraken X73</h3>
+                        <p>Type: AIO | Radiator Size: 360mm | Fans: 3 x 120mm | Features: RGB Lighting, Customizable</p>
+                    </div>
+                    <div class="cooling-item">
+                        <img src="https://www.ekwb.com/shop/media/catalog/product/cache/0e6a2685cb0945cb58e0fa38f83cc1b0/4/6/46021_1_.jpg" alt="EK-AIO Elite 360 D-RGB">
+                        <h3>EK-AIO Elite 360 D-RGB</h3>
+                        <p>Type: AIO | Radiator Size: 360mm | Fans: 3 x 120mm | Features: RGB Lighting</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Air Cooling -->
+            <div class="cooling-category">
+                <h2>Air Cooling</h2>
+                <div class="cooling-items">
+                    <div class="cooling-item">
+                        <img src="https://www.noctua.at/en/products/cpu-cooler-retention-775-intel/nh-d15" alt="Noctua NH-D15">
+                        <h3>Noctua NH-D15</h3>
+                        <p>Type: Dual Tower | Fans: 2 x 140mm | Features: High Performance, Quiet</p>
+                    </div>
+                    <div class="cooling-item">
+                        <img src="https://www.bequiet.com/fileadmin/_processed_/1/a/csm_Dark_Rock_4_9a7364e568.png" alt="Be Quiet! Dark Rock 4">
+                        <h3>Be Quiet! Dark Rock 4</h3>
+                        <p>Type: Single Tower | Fan: 135mm | Features: Silent Operation, High Performance</p>
+                    </div>
+                    <div class="cooling-item">
+                        <img src="https://www.arctic.de/media/image/9e/6c/85/Arctic-Freezer-34-Esports-Duo.jpg" alt="Arctic Freezer 34">
+                        <h3>Arctic Freezer 34</h3>
+                        <p>Type: Single Tower | Fans: 2 x 120mm | Features: Efficient Cooling, Affordable</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Custom Loop -->
+            <div class="cooling-category">
+                <h2>Custom Loop</h2>
+                <div class="cooling-items">
+                    <div class="cooling-item">
+                        <img src="https://www.ekwb.com/shop/media/catalog/product/cache/1/image/8d82c1508f5b446fa8ec1863cf5a0b84/4/6/46010.jpg" alt="EK-Quantum Kinetic TBE 200 D5">
+                        <h3>EK-Quantum Kinetic TBE 200 D5</h3>
+                        <p>Type: Pump/Res Combo | Pump Type: D5 | Features: Customizable RGB</p>
+                    </div>
+                    <div class="cooling-item">
+                        <img src="https://www.alphacool.com/media/image/22/f7/56/360mm_xtreme_2.jpg" alt="Alphacool NexXxoS XT45">
+                        <h3>Alphacool NexXxoS XT45</h3>
+                        <p>Type: Radiator | Size: 360mm | Features: High Performance, Slim Design</p>
+                    </div>
+                    <div class="cooling-item">
+                        <img src="https://www.ekwb.com/shop/media/catalog/product/cache/1/image/7e7df60a38df2ae73c8560b0599f45da/4/6/46020_1_.jpg" alt="EK-Quantum Vector GPU Block">
+                        <h3>EK-Quantum Vector GPU Block</h3>
+                        <p>Type: GPU Block | Compatibility: Various GPUs | Features: High Efficiency, RGB Lighting</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 PC Parts. All rights reserved.</p>
+    </footer>
+</body>
+</html>
