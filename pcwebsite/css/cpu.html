@@ -103,29 +103,19 @@
 
         .cpu-item p {
             margin: 0;
-            font-size: 0.875rem;
         }
 
-        .cpu-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-        }
-
-        /* Add to Cart button styling */
-        .add-to-cart {
-            display: inline-block;
+        .cpu-item button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
             margin-top: 1rem;
-            padding: 0.5rem 1rem;
-            font-size: 1rem;
-            color: #fff;
-            background: #28a745;
-            border-radius: 5px;
-            text-transform: uppercase;
-            transition: background 0.3s ease;
         }
 
-        .add-to-cart:hover {
-            background: #218838;
+        .cpu-item button:hover {
+            background-color: #218838;
         }
 
         /* Footer styling */
@@ -146,6 +136,44 @@
             nav ul li {
                 margin: 0.5rem 0;
             }
+        }
+
+        /* Shopping Cart Styling */
+        #cart {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 20px;
+            background: #fff;
+        }
+
+        #cart-items {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #cart-items li {
+            margin-bottom: 5px;
+        }
+
+        #clear-cart, #checkout {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        #clear-cart:hover, #checkout:hover {
+            background-color: #0056b3;
+        }
+
+        #clear-cart {
+            background-color: #dc3545;
+        }
+
+        #clear-cart:hover {
+            background-color: #c82333;
         }
     </style>
 </head>
@@ -255,12 +283,71 @@
                     <p>24 Cores | Base Clock: 3.0 GHz | Boost Clock: 5.8 GHz</p>
                     <a href="https://example.com/cart/add/core-i9-13900k" class="add-to-cart">Add to Cart</a>
                 </div>
-            </div>
         </section>
+
+        <div id="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: $<span id="cart-total">0.00</span></p>
+            <button id="clear-cart">Clear Cart</button>
+            <button id="checkout">Checkout</button>
+        </div>
     </main>
 
     <footer>
         <p>&copy; 2024 PC Parts Store</p>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+            const cartItemsList = document.getElementById('cart-items');
+            const cartTotal = document.getElementById('cart-total');
+
+            // Load cart from local storage
+            updateCart();
+
+            document.querySelectorAll('.add-to-cart').forEach(button => {
+                button.addEventListener('click', function() {
+                    const name = this.getAttribute('data-name');
+                    const price = parseFloat(this.getAttribute('data-price'));
+
+                    // Add item to cart
+                    cartItems.push({ name, price });
+                    updateCart();
+                });
+            });
+
+            document.getElementById('clear-cart').addEventListener('click', function() {
+                cartItems.length = 0; // Clear cart items
+                updateCart();
+            });
+
+            document.getElementById('checkout').addEventListener('click', function() {
+                // Placeholder for checkout process
+                alert('Checkout functionality is not implemented yet.');
+            });
+
+            function updateCart() {
+                // Save cart to local storage
+                localStorage.setItem('cartItems', JSON.stringify(cartItems));
+
+                // Clear the list
+                cartItemsList.innerHTML = '';
+                let total = 0;
+
+                // Populate the cart items list
+                cartItems.forEach(item => {
+                    const li = document.createElement('li');
+                    li.textContent = `${item.name} - $${item.price.toFixed(2)}`;
+                    cartItemsList.appendChild(li);
+                    total += item.price;
+                });
+
+                // Update total
+                cartTotal.textContent = total.toFixed(2);
+            }
+        });
+    </script>
 </body>
 </html>
