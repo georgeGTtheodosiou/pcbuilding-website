@@ -74,7 +74,7 @@
             display: flex;
             flex-wrap: wrap;
             gap: 1.5rem;
-            justify-content: space-around;
+            justify-content: space-between; /* Ensures proper spacing between items */
         }
 
         .case-item {
@@ -82,7 +82,7 @@
             border: 1px solid #ddd;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: calc(33.333% - 1.5rem); /* 3 items per row */
+            width: calc(33.333% - 1rem); /* Adjusted for 3 items per row */
             text-align: center;
             padding: 1rem;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -121,13 +121,13 @@
         /* Media Queries for Mobile Responsiveness */
         @media (max-width: 768px) {
             .case-item {
-                width: calc(50% - 1.5rem); /* 2 items per row */
+                width: calc(50% - 1rem); /* 2 items per row */
             }
         }
 
         @media (max-width: 480px) {
             .case-item {
-                width: calc(100% - 1.5rem); /* 1 item per row */
+                width: calc(100% - 1rem); /* 1 item per row */
             }
         }
     </style>
