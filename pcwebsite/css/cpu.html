@@ -72,7 +72,7 @@
 
         .cpu-items {
             display: grid;
-            grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid layout */
             gap: 1.5rem;
         }
 
@@ -121,8 +121,12 @@
 
         /* Responsive design for smaller screens */
         @media (max-width: 768px) {
-            .cpu-items {
-                grid-template-columns: 1fr; /* Single column layout for mobile devices */
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                margin: 0.5rem 0;
             }
         }
     </style>
