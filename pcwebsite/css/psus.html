@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PSUs</title>
-   <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
     <style>
         /* Reset some default browser styles */
         body, h1, h2, h3, p, ul, li, img, a {
@@ -64,48 +64,48 @@
             margin: auto;
         }
 
-        #ddr5 h2 {
+        section h2 {
             text-align: center;
             font-size: 2rem;
             margin-bottom: 1.5rem;
         }
 
-        .ram-items {
+        .psu-items {
             display: flex;
             flex-wrap: wrap;
             gap: 1.5rem;
             justify-content: space-around;
         }
 
-        .ram-item {
+        .psu-item {
             background: #fff;
             border: 1px solid #ddd;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: calc(33.333% - 1.5rem);
+            width: calc(33.333% - 1.5rem); /* Adjusted for three items per row */
             text-align: center;
             padding: 1rem;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .ram-item img {
+        .psu-item img {
             max-width: 100%;
             height: auto;
             margin-bottom: 1rem;
             border-radius: 8px;
         }
 
-        .ram-item h3 {
+        .psu-item h3 {
             margin-bottom: 0.5rem;
             color: #333;
             font-size: 1.25rem;
         }
 
-        .ram-item p {
+        .psu-item p {
             margin: 0;
         }
 
-        .ram-item:hover {
+        .psu-item:hover {
             transform: translateY(-5px);
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
         }
@@ -120,14 +120,14 @@
 
         /* Media Queries for Mobile Responsiveness */
         @media (max-width: 768px) {
-            .ram-item {
-                width: calc(50% - 1.5rem);
+            .psu-item {
+                width: calc(50% - 1.5rem); /* Two items per row */
             }
         }
 
         @media (max-width: 480px) {
-            .ram-item {
-                width: calc(100% - 1.5rem);
+            .psu-item {
+                width: calc(100% - 1.5rem); /* Single item per row */
             }
         }
     </style>
@@ -146,24 +146,19 @@
     <main>
         <section id="atx">
             <h2>ATX PSUs</h2>
-            <!-- ATX PSUs with images -->
-            <div class="psu-item">
-                <img src="https://storage.googleapis.com/bionic_1626848719/rm850x_14001990hero_1689583916.png" alt="Corsair RM850x">
-                <div class="psu-details">
+            <div class="psu-items">
+                <div class="psu-item">
+                    <img src="https://storage.googleapis.com/bionic_1626848719/rm850x_14001990hero_1689583916.png" alt="Corsair RM850x">
                     <h3>Corsair RM850x</h3>
                     <p>Wattage: 850W | Certification: 80 PLUS Gold | Modular: Fully Modular</p>
                 </div>
-            </div>
-            <div class="psu-item">
-                <img src="https://images.evga.com/products/gallery/png/220-G5-0750-X1_XL_4.png" alt="EVGA SuperNOVA 750 G5">
-                <div class="psu-details">
+                <div class="psu-item">
+                    <img src="https://images.evga.com/products/gallery/png/220-G5-0750-X1_XL_4.png" alt="EVGA SuperNOVA 750 G5">
                     <h3>EVGA SuperNOVA 750 G5</h3>
                     <p>Wattage: 750W | Certification: 80 PLUS Gold | Modular: Fully Modular</p>
                 </div>
-            </div>
-            <div class="psu-item">
-                <img src="https://seasonic.com/wp-content/uploads/2024/04/focus-plus-gold-connector-side-1440x1080.webp" alt="Seasonic Focus Plus 750W">
-                <div class="psu-details">
+                <div class="psu-item">
+                    <img src="https://seasonic.com/wp-content/uploads/2024/04/focus-plus-gold-connector-side-1440x1080.webp" alt="Seasonic Focus Plus 750W">
                     <h3>Seasonic Focus Plus 750W</h3>
                     <p>Wattage: 750W | Certification: 80 PLUS Gold | Modular: Fully Modular</p>
                 </div>
@@ -172,24 +167,19 @@
 
         <section id="sfx">
             <h2>SFX PSUs</h2>
-            <!-- SFX PSUs with images -->
-            <div class="psu-item">
-                <img src="https://storage.googleapis.com/bionic_1626848719/products/9107cafe715f4708a69c9bed497c486724783245/banners/14002195_1685720303.jpg" alt="Corsair SF750">
-                <div class="psu-details">
+            <div class="psu-items">
+                <div class="psu-item">
+                    <img src="https://storage.googleapis.com/bionic_1626848719/products/9107cafe715f4708a69c9bed497c486724783245/banners/14002195_1685720303.jpg" alt="Corsair SF750">
                     <h3>Corsair SF750</h3>
                     <p>Wattage: 750W | Certification: 80 PLUS Platinum | Modular: Fully Modular</p>
                 </div>
-            </div>
-            <div class="psu-item">
-                <img src="https://www.silverstonetek.com/upload/images/products/sx700-pt/sx700-pt-34left-top.jpg" alt="SilverStone SX700-PT">
-                <div class="psu-details">
+                <div class="psu-item">
+                    <img src="https://www.silverstonetek.com/upload/images/products/sx700-pt/sx700-pt-34left-top.jpg" alt="SilverStone SX700-PT">
                     <h3>SilverStone SX700-PT</h3>
                     <p>Wattage: 700W | Certification: 80 PLUS Platinum | Modular: Fully Modular</p>
                 </div>
-            </div>
-            <div class="psu-item">
-                <img src="https://a.storyblok.com/f/281110/7b8f678c19/v650-sfx-gold-gallery-3.png" alt="Cooler Master V650 SFX">
-                <div class="psu-details">
+                <div class="psu-item">
+                    <img src="https://a.storyblok.com/f/281110/7b8f678c19/v650-sfx-gold-gallery-3.png" alt="Cooler Master V650 SFX">
                     <h3>Cooler Master V650 SFX</h3>
                     <p>Wattage: 650W | Certification: 80 PLUS Gold | Modular: Fully Modular</p>
                 </div>
@@ -201,4 +191,3 @@
     </footer>
 </body>
 </html>
-
