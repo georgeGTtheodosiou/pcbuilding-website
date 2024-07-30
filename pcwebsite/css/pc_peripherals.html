@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peripherals</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset default browser styles */
+        body, h1, h2, h3, p, ul, li, img, a {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        /* General body styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header styling */
+        header {
+            background: linear-gradient(to right, #007BFF, #00C6FF);
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            margin: 1rem 0 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 1rem;
+            transition: color 0.3s ease, text-shadow 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #FFD700;
+            text-shadow: 0 0 5px rgba(255, 215, 0, 0.7);
+        }
+
+        /* Main content styling */
+        main {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        .peripheral-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid layout */
+            gap: 1.5rem;
+        }
+
+        .peripheral-item {
+            display: flex;
+            flex-direction: column;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 1rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .peripheral-item img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+        }
+
+        .peripheral-item h3 {
+            margin-bottom: 0.5rem;
+            color: #333;
+            font-size: 1.25rem;
+        }
+
+        .peripheral-item p {
+            margin: 0;
+        }
+
+        .peripheral-item button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            margin-top: 1rem;
+        }
+
+        .peripheral-item button:hover {
+            background-color: #218838;
+        }
+
+        /* Footer styling */
+        footer {
+            background: linear-gradient(to right, #333, #555);
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+        }
+
+        /* Shopping Cart Styling */
+        #cart {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 20px;
+            background: #fff;
+        }
+
+        #cart-items {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #cart-items li {
+            margin-bottom: 5px;
+        }
+
+        #clear-cart, #checkout {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        #clear-cart:hover, #checkout:hover {
+            background-color: #0056b3;
+        }
+
+        #clear-cart {
+            background-color: #dc3545;
+        }
+
+        #clear-cart:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PC Peripherals</h1>
+        <nav>
+            <ul>
+                <li><a href="pc_peripherals.html">Home</a></li>
+                <li><a href="#keyboards">Keyboards</a></li>
+                <li><a href="#mice">Mice</a></li>
+                <li><a href="#monitors">Monitors</a></li>
+                <li><a href="#headsets">Headsets</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="keyboards">
+            <h2>Keyboards</h2>
+            <div class="peripheral-items">
+                <div class="peripheral-item">
+                    <img src="https://example.com/keyboard1.jpg" alt="Mechanical Keyboard">
+                    <h3>Mechanical Keyboard</h3>
+                    <p>RGB Backlighting | Cherry MX Switches</p>
+                    <button class="add-to-cart" data-name="Mechanical Keyboard" data-price="50.00">Add to Cart</button>
+                </div>
+                <div class="peripheral-item">
+                    <img src="https://example.com/keyboard2.jpg" alt="Wireless Keyboard">
+                    <h3>Wireless Keyboard</h3>
+                    <p>Compact Design | Bluetooth Connectivity</p>
+                    <button class="add-to-cart" data-name="Wireless Keyboard" data-price="40.00">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="mice">
+            <h2>Mice</h2>
+            <div class="peripheral-items">
+                <div class="peripheral-item">
+                    <img src="https://example.com/mouse1.jpg" alt="Gaming Mouse">
+                    <h3>Gaming Mouse</h3>
+                    <p>16000 DPI | Customizable Buttons</p>
+                    <button class="add-to-cart" data-name="Gaming Mouse" data-price="30.00">Add to Cart</button>
+                </div>
+                <div class="peripheral-item">
+                    <img src="https://example.com/mouse2.jpg" alt="Ergonomic Mouse">
+                    <h3>Ergonomic Mouse</h3>
+                    <p>Ergonomic Design | Wireless</p>
+                    <button class="add-to-cart" data-name="Ergonomic Mouse" data-price="25.00">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="monitors">
+            <h2>Monitors</h2>
+            <div class="peripheral-items">
+                <div class="peripheral-item">
+                    <img src="https://example.com/monitor1.jpg" alt="4K Monitor">
+                    <h3>4K Monitor</h3>
+                    <p>27-inch | 144Hz Refresh Rate</p>
+                    <button class="add-to-cart" data-name="4K Monitor" data-price="300.00">Add to Cart</button>
+                </div>
+                <div class="peripheral-item">
+                    <img src="https://example.com/monitor2.jpg" alt="Ultrawide Monitor">
+                    <h3>Ultrawide Monitor</h3>
+                    <p>34-inch | 100Hz Refresh Rate</p>
+                    <button class="add-to-cart" data-name="Ultrawide Monitor" data-price="400.00">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="headsets">
+            <h2>Headsets</h2>
+            <div class="peripheral-items">
+                <div class="peripheral-item">
+                    <img src="https://example.com/headset1.jpg" alt="Gaming Headset">
+                    <h3>Gaming Headset</h3>
+                    <p>7.1 Surround Sound | Noise Cancelling Microphone</p>
+                    <button class="add-to-cart" data-name="Gaming Headset" data-price="60.00">Add to Cart</button>
+                </div>
+                <div class="peripheral-item">
+                    <img src="https://example.com/headset2.jpg" alt="Wireless Headset">
+                    <h3>Wireless Headset</h3>
+                    <p>Bluetooth | Built-in Microphone</p>
+                    <button class="add-to-cart" data-name="Wireless Headset" data-price="70.00">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Shopping Cart Section -->
+        <div id="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items">
+                <!-- Cart items will be added here dynamically -->
+            </ul>
+            <button id="clear-cart">Clear Cart</button>
+            <button id="checkout">Checkout</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 PC Peripherals. All rights reserved.</p>
+    </footer>
+</body>
+</html>
