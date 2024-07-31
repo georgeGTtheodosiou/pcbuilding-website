@@ -210,17 +210,68 @@
                     <button class="add-to-cart" data-name="Kingston Fury Renegade RGB 16GB" data-price="10.00">Add to Cart</button>
                 </div>
             </div>
-            <div id="cart">
+        </section>
+         <div id="cart">
             <h2>Shopping Cart</h2>
             <ul id="cart-items"></ul>
             <p>Total: $<span id="cart-total">0.00</span></p>
             <button id="clear-cart">Clear Cart</button>
             <button id="checkout">Checkout</button>
         </div>
-        </section>
     </main>
     <footer>
         <p>&copy; 2024 PC Parts. All rights reserved.</p>
     </footer>
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+            const cartItemsList = document.getElementById('cart-items');
+            const cartTotal = document.getElementById('cart-total');
+
+            // Load cart from local storage
+            updateCart();
+
+            document.querySelectorAll('.add-to-cart').forEach(button => {
+                button.addEventListener('click', function() {
+                    const name = this.getAttribute('data-name');
+                    const price = parseFloat(this.getAttribute('data-price'));
+
+                    // Add item to cart
+                    cartItems.push({ name, price });
+                    updateCart();
+                });
+            });
+
+            document.getElementById('clear-cart').addEventListener('click', function() {
+                cartItems.length = 0; // Clear cart items
+                updateCart();
+            });
+
+            document.getElementById('checkout').addEventListener('click', function() {
+                // Placeholder for checkout process
+                alert('Checkout functionality is not implemented yet.');
+            });
+
+            function updateCart() {
+                // Save cart to local storage
+                localStorage.setItem('cartItems', JSON.stringify(cartItems));
+
+                // Clear the list
+                cartItemsList.innerHTML = '';
+                let total = 0;
+
+                // Populate the cart items list
+                cartItems.forEach(item => {
+                    const li = document.createElement('li');
+                    li.textContent = `${item.name} - $${item.price.toFixed(2)}`;
+                    cartItemsList.appendChild(li);
+                    total += item.price;
+                });
+
+                // Update total
+                cartTotal.textContent = total.toFixed(2);
+            }
+        });
+    </script>
 </body>
 </html>
