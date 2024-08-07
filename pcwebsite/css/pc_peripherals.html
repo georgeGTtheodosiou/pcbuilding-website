@@ -14,7 +14,7 @@
             text-decoration: none;
         }
 
-       /* General body styling */
+     /* General body styling */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -70,6 +70,13 @@ section {
     margin-bottom: 1.5rem; /* Reduced margin */
 }
 
+/* Grid Container for Peripheral Items */
+.peripheral-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Two items per row */
+    gap: 1rem; /* Space between items */
+}
+
 .peripheral-item {
     display: flex;
     flex-direction: column;
@@ -79,8 +86,6 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     padding: 0.75rem; /* Reduced padding */
-    width: calc(50% - 1rem); /* Two items per row with some gap */
-    margin: 0.5rem; /* Adjusted margin for spacing */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -134,8 +139,8 @@ footer {
         margin: 0.5rem 0;
     }
 
-    .peripheral-item {
-        width: calc(100% - 1rem); /* Full width for smaller screens */
+    .peripheral-grid {
+        grid-template-columns: 1fr; /* One item per row on small screens */
     }
 }
 
@@ -176,6 +181,7 @@ footer {
 #clear-cart:hover {
     background-color: #c82333;
 }
+
  </style>
 </head>
 <body>
@@ -188,64 +194,66 @@ footer {
         </nav>
     </header>
     <main>
-          <section id="keyboards">
-            <h2>Keyboards</h2>
-<div class="peripheral-item">
-    <img src="https://mercular.s3.ap-southeast-1.amazonaws.com/images/products/2024/03/Product/logitech-g-pro-x-60-wireless-mechanical-gaming-keyboard-white-upper-view.jpg" alt="Logitech G Pro X">
-    <h3>Logitech G Pro X</h3>
-    <p>RGB Backlighting | Hot-Swappable Switches | Compact Design</p>
-    <button class="add-to-cart" data-name="Logitech G Pro X" data-price="150.00">Add to Cart</button>
-</div>
-<div class="peripheral-item">
-    <img src="https://www.keychron.com/cdn/shop/articles/Keychron-K6-hot-swappable-compact-65-percent-wireless-mechanical-keyboard-for-Mac-Windows-iOS-Gateron-switch-with-type-C-RGB-white-backlight_fa811b03-5fba-41aa-b9ae-c476eca6825a.jpg?crop=center&height=1200&v=1656380625&width=1200" alt="Keychron K6">
-    <h3>Keychron K6</h3>
-    <p>RGB Backlighting | Compact 65% Design | Hot-Swappable Switches</p>
-    <button class="add-to-cart" data-name="Keychron K6" data-price="120.00">Add to Cart</button>
-</div>
-
-            </div>
-        </section>
-
-        <section id="mice">
-            <h2>Mice</h2>
-<div class="peripheral-item">
-    <img src="https://resource.logitechg.com/w_692,c_lpad,ar_4:3,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/pro-wireless-gaming-mouse/pro-wireless-carbon-gallery-3.png?v=1" alt="Logitech G Pro Wireless">
-    <h3>Logitech G Pro Wireless</h3>
-    <p>Ergonomic Design | Long Battery Life | High Precision Sensor</p>
-    <button class="add-to-cart" data-name="Logitech G Pro Wireless" data-price="120.00">Add to Cart</button>
-</div>
-                <div class="peripheral-item">
-    <img src="https://media.currys.biz/i/currysprod/10252398?$l-large$&fmt=auto" alt="Razer Basilisk X Hyperspeed">
-    <h3>Razer Basilisk X Hyperspeed</h3>
-    <p>Dual Mode | Rechargeable Battery | High DPI Sensor</p>
-    <button class="add-to-cart" data-name="Razer Basilisk X Hyperspeed" data-price="100.00">Add to Cart</button>
-</div>
-            </div>
-        </section>
-
-        <section id="monitors">
-            <h2>Monitors</h2>
+    <section id="keyboards">
+        <h2>Keyboards</h2>
+        <div class="peripheral-grid">
             <div class="peripheral-item">
-    <img src="https://example.com/asus_vg259qm.jpg" alt="ASUS VG259QM">
-    <h3>ASUS VG259QM</h3>
-    <p>1080p 240Hz | 1ms Response Time | 24 inches | IPS Panel</p>
-    <button class="add-to-cart" data-name="ASUS VG259QM" data-price="300.00">Add to Cart</button>
-</div>
-               <div class="peripheral-item">
-    <img src="https://example.com/dell_alienware_aw2721d.jpg" alt="Dell Alienware AW2721D">
-    <h3>Dell Alienware AW2721D</h3>
-    <p>1440p 240Hz | 0.5ms Response Time | 27 inches | IPS Panel</p>
-    <button class="add-to-cart" data-name="Dell Alienware AW2721D" data-price="600.00">Add to Cart</button>
-</div>
-<div class="peripheral-item">
-    <img src="https://example.com/lg_ultragear_34gp950g-b.jpg" alt="LG UltraGear 34GP950G-B">
-    <h3>LG UltraGear 34GP950G-B</h3>
-    <p>4K 240Hz | 0.05ms Response Time | 34 inches | OLED Panel</p>
-    <button class="add-to-cart" data-name="LG UltraGear 34GP950G-B" data-price="1500.00">Add to Cart</button>
-</div>
+                <img src="https://mercular.s3.ap-southeast-1.amazonaws.com/images/products/2024/03/Product/logitech-g-pro-x-60-wireless-mechanical-gaming-keyboard-white-upper-view.jpg" alt="Logitech G Pro X">
+                <h3>Logitech G Pro X</h3>
+                <p>RGB Backlighting | Hot-Swappable Switches | Compact Design</p>
+                <button class="add-to-cart" data-name="Logitech G Pro X" data-price="150.00">Add to Cart</button>
             </div>
-        </section>
-    </main>
+            <div class="peripheral-item">
+                <img src="https://www.keychron.com/cdn/shop/articles/Keychron-K6-hot-swappable-compact-65-percent-wireless-mechanical-keyboard-for-Mac-Windows-iOS-Gateron-switch-with-type-C-RGB-white-backlight_fa811b03-5fba-41aa-b9ae-c476eca6825a.jpg?crop=center&height=1200&v=1656380625&width=1200" alt="Keychron K6">
+                <h3>Keychron K6</h3>
+                <p>RGB Backlighting | Compact 65% Design | Hot-Swappable Switches</p>
+                <button class="add-to-cart" data-name="Keychron K6" data-price="120.00">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="mice">
+        <h2>Mice</h2>
+        <div class="peripheral-grid">
+            <div class="peripheral-item">
+                <img src="https://resource.logitechg.com/w_692,c_lpad,ar_4:3,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/pro-wireless-gaming-mouse/pro-wireless-carbon-gallery-3.png?v=1" alt="Logitech G Pro Wireless">
+                <h3>Logitech G Pro Wireless</h3>
+                <p>Ergonomic Design | Long Battery Life | High Precision Sensor</p>
+                <button class="add-to-cart" data-name="Logitech G Pro Wireless" data-price="120.00">Add to Cart</button>
+            </div>
+            <div class="peripheral-item">
+                <img src="https://media.currys.biz/i/currysprod/10252398?$l-large$&fmt=auto" alt="Razer Basilisk X Hyperspeed">
+                <h3>Razer Basilisk X Hyperspeed</h3>
+                <p>Dual Mode | Rechargeable Battery | High DPI Sensor</p>
+                <button class="add-to-cart" data-name="Razer Basilisk X Hyperspeed" data-price="100.00">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="monitors">
+        <h2>Monitors</h2>
+        <div class="peripheral-grid">
+            <div class="peripheral-item">
+                <img src="https://example.com/asus_vg259qm.jpg" alt="ASUS VG259QM">
+                <h3>ASUS VG259QM</h3>
+                <p>1080p 240Hz | 1ms Response Time | 24 inches | IPS Panel</p>
+                <button class="add-to-cart" data-name="ASUS VG259QM" data-price="300.00">Add to Cart</button>
+            </div>
+            <div class="peripheral-item">
+                <img src="https://example.com/dell_alienware_aw2721d.jpg" alt="Dell Alienware AW2721D">
+                <h3>Dell Alienware AW2721D</h3>
+                <p>1440p 240Hz | 0.5ms Response Time | 27 inches | IPS Panel</p>
+                <button class="add-to-cart" data-name="Dell Alienware AW2721D" data-price="600.00">Add to Cart</button>
+            </div>
+            <div class="peripheral-item">
+                <img src="https://example.com/lg_ultragear_34gp950g-b.jpg" alt="LG UltraGear 34GP950G-B">
+                <h3>LG UltraGear 34GP950G-B</h3>
+                <p>4K 240Hz | 0.05ms Response Time | 34 inches | OLED Panel</p>
+                <button class="add-to-cart" data-name="LG UltraGear 34GP950G-B" data-price="1500.00">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+</main>
     <aside class="cart">
         <h2>Shopping Cart</h2>
         <ul id="cart-items"></ul>
