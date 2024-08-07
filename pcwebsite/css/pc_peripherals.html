@@ -4,190 +4,192 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peripherals</title>
-     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
     <style>
         /* Reset default browser styles */
-body, h1, h2, h3, p, ul, li, img, a {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-}
+        body, h1, h2, h3, p, ul, li, img, a {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
 
-/* General body styling */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-}
+        /* General body styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
 
-/* Header styling */
-header {
-    background: linear-gradient(to right, #007BFF, #00C6FF);
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
-}
+        /* Header styling */
+        header {
+            background: linear-gradient(to right, #007BFF, #00C6FF);
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
 
-header h1 {
-    font-size: 2rem; /* Adjusted font size for smaller design */
-    margin-bottom: 0.5rem;
-}
+        header h1 {
+            font-size: 2rem; /* Adjusted font size for smaller design */
+            margin-bottom: 0.5rem;
+        }
 
-nav ul {
-    display: flex;
-    justify-content: center;
-    margin: 1rem 0 0;
-    padding: 0;
-}
+        nav ul {
+            display: flex;
+            justify-content: center;
+            margin: 1rem 0 0;
+            padding: 0;
+        }
 
-nav ul li {
-    margin: 0 0.5rem; /* Reduced margin */
-}
+        nav ul li {
+            margin: 0 0.5rem; /* Reduced margin */
+        }
 
-nav ul li a {
-    color: #fff;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 0.875rem; /* Smaller font size */
-    transition: color 0.3s ease, text-shadow 0.3s ease;
-}
+        nav ul li a {
+            color: #fff;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.875rem; /* Smaller font size */
+            transition: color 0.3s ease, text-shadow 0.3s ease;
+        }
 
-nav ul li a:hover {
-    color: #FFD700;
-    text-shadow: 0 0 5px rgba(255, 215, 0, 0.7);
-}
+        nav ul li a:hover {
+            color: #FFD700;
+            text-shadow: 0 0 5px rgba(255, 215, 0, 0.7);
+        }
 
-/* Main content styling */
-main {
-    padding: 1rem; /* Reduced padding */
-    max-width: 900px; /* Reduced max-width */
-    margin: auto;
-}
+        /* Main content styling */
+        main {
+            padding: 1rem; /* Reduced padding */
+            max-width: 900px; /* Reduced max-width */
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem; /* Space between sections */
+        }
 
-section {
-    margin-bottom: 1.5rem; /* Reduced margin */
-}
+        section {
+            margin-bottom: 1.5rem; /* Reduced margin */
+        }
 
-/* Grid Container for Peripheral Items */
-.peripheral-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Two items per row */
-    gap: 1rem; /* Space between items */
-}
+        /* Grid Container for Peripheral Items */
+        .peripheral-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Two items per row */
+            gap: 1rem; /* Space between items */
+        }
 
-/* Peripheral Item Styling */
-.peripheral-item {
-    display: flex;
-    flex-direction: column;
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    padding: 0.75rem; /* Reduced padding */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    align-items: center; /* Center content horizontally */
-}
+        /* Peripheral Item Styling */
+        .peripheral-item {
+            display: flex;
+            flex-direction: column;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 0.75rem; /* Reduced padding */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            align-items: center; /* Center content horizontally */
+        }
 
-/* Center and enlarge images */
-.peripheral-item img {
-    max-width: 220px; /* Increase the width for larger images */
-    height: auto;
-    margin-bottom: 0.75rem; /* Reduced margin */
-    border-radius: 8px;
-    display: block; /* Ensures image centering */
-    margin-left: auto; /* Center horizontally */
-    margin-right: auto; /* Center horizontally */
-}
+        /* Center and enlarge images */
+        .peripheral-item img {
+            max-width: 220px; /* Increase the width for larger images */
+            height: auto;
+            margin-bottom: 0.75rem; /* Reduced margin */
+            border-radius: 8px;
+            display: block; /* Ensures image centering */
+            margin-left: auto; /* Center horizontally */
+            margin-right: auto; /* Center horizontally */
+        }
 
-.peripheral-item h3 {
-    margin-bottom: 0.5rem;
-    color: #333;
-    font-size: 1rem; /* Smaller font size */
-}
+        .peripheral-item h3 {
+            margin-bottom: 0.5rem;
+            color: #333;
+            font-size: 1rem; /* Smaller font size */
+        }
 
-.peripheral-item p {
-    margin: 0;
-}
+        .peripheral-item p {
+            margin: 0;
+        }
 
-.peripheral-item button {
-    background-color: #28a745;
-    color: white;
-    border: none;
-    padding: 4px 8px; /* Adjusted padding */
-    cursor: pointer;
-    margin-top: 0.75rem; /* Reduced margin */
-}
+        .peripheral-item button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 4px 8px; /* Adjusted padding */
+            cursor: pointer;
+            margin-top: 0.75rem; /* Reduced margin */
+        }
 
-.peripheral-item button:hover {
-    background-color: #218838;
-}
+        .peripheral-item button:hover {
+            background-color: #218838;
+        }
 
-/* Footer styling */
-footer {
-    background: linear-gradient(to right, #333, #555);
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 1.5rem; /* Reduced margin */
-}
+        /* Footer styling */
+        footer {
+            background: linear-gradient(to right, #333, #555);
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 1.5rem; /* Reduced margin */
+        }
 
-/* Responsive design for smaller screens */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
+        /* Responsive design for smaller screens */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
 
-    nav ul li {
-        margin: 0.5rem 0;
-    }
+            nav ul li {
+                margin: 0.5rem 0;
+            }
 
-    .peripheral-grid {
-        grid-template-columns: 1fr; /* One item per row on small screens */
-    }
-}
+            .peripheral-grid {
+                grid-template-columns: 1fr; /* One item per row on small screens */
+            }
+        }
 
-/* Shopping Cart Styling */
-#cart {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-top: 20px;
-    background: #fff;
-}
+        /* Shopping Cart Styling */
+        #cart {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 20px;
+            background: #fff;
+        }
 
-#cart-items {
-    list-style-type: none;
-    padding: 0;
-}
+        #cart-items {
+            list-style-type: none;
+            padding: 0;
+        }
 
-#cart-items li {
-    margin-bottom: 5px;
-}
+        #cart-items li {
+            margin-bottom: 5px;
+        }
 
-#clear-cart, #checkout {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 4px 8px; /* Adjusted padding */
-    cursor: pointer;
-    margin-top: 10px;
-}
+        #clear-cart, #checkout {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 4px 8px; /* Adjusted padding */
+            cursor: pointer;
+            margin-top: 10px;
+        }
 
-#clear-cart:hover, #checkout:hover {
-    background-color: #0056b3;
-}
+        #clear-cart:hover, #checkout:hover {
+            background-color: #0056b3;
+        }
 
-#clear-cart {
-    background-color: #dc3545;
-}
+        #clear-cart {
+            background-color: #dc3545;
+        }
 
-#clear-cart:hover {
-    background-color: #c82333;
-}
-
- </style>
+        #clear-cart:hover {
+            background-color: #c82333;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -199,77 +201,77 @@ footer {
         </nav>
     </header>
     <main>
-    <section id="keyboards">
-        <h2>Keyboards</h2>
-        <div class="peripheral-grid">
-            <div class="peripheral-item">
-                <img src="https://mercular.s3.ap-southeast-1.amazonaws.com/images/products/2024/03/Product/logitech-g-pro-x-60-wireless-mechanical-gaming-keyboard-white-upper-view.jpg" alt="Logitech G Pro X">
-                <h3>Logitech G Pro X</h3>
-                <p>RGB Backlighting | Hot-Swappable Switches | Compact Design</p>
-                <button class="add-to-cart" data-name="Logitech G Pro X" data-price="150.00">Add to Cart</button>
+        <section id="keyboards">
+            <h2>Keyboards</h2>
+            <div class="peripheral-grid">
+                <div class="peripheral-item">
+                    <img src="https://mercular.s3.ap-southeast-1.amazonaws.com/images/products/2024/03/Product/logitech-g-pro-x-60-wireless-mechanical-gaming-keyboard-white-upper-view.jpg" alt="Logitech G Pro X">
+                    <h3>Logitech G Pro X</h3>
+                    <p>RGB Backlighting | Hot-Swappable Switches | Compact Design</p>
+                    <button class="add-to-cart" data-name="Logitech G Pro X" data-price="150.00">Add to Cart</button>
+                </div>
+                <div class="peripheral-item">
+                    <img src="https://www.keychron.com/cdn/shop/articles/Keychron-K6-hot-swappable-compact-65-percent-wireless-mechanical-keyboard-for-Mac-Windows-iOS-Gateron-switch-with-type-C-RGB-white-backlight_fa811b03-5fba-41aa-b9ae-c476eca6825a.jpg?crop=center&height=1200&v=1656380625&width=1200" alt="Keychron K6">
+                    <h3>Keychron K6</h3>
+                    <p>RGB Backlighting | Compact 65% Design | Hot-Swappable Switches</p>
+                    <button class="add-to-cart" data-name="Keychron K6" data-price="120.00">Add to Cart</button>
+                </div>
             </div>
-            <div class="peripheral-item">
-                <img src="https://www.keychron.com/cdn/shop/articles/Keychron-K6-hot-swappable-compact-65-percent-wireless-mechanical-keyboard-for-Mac-Windows-iOS-Gateron-switch-with-type-C-RGB-white-backlight_fa811b03-5fba-41aa-b9ae-c476eca6825a.jpg?crop=center&height=1200&v=1656380625&width=1200" alt="Keychron K6">
-                <h3>Keychron K6</h3>
-                <p>RGB Backlighting | Compact 65% Design | Hot-Swappable Switches</p>
-                <button class="add-to-cart" data-name="Keychron K6" data-price="120.00">Add to Cart</button>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="mice">
-        <h2>Mice</h2>
-        <div class="peripheral-grid">
-            <div class="peripheral-item">
-                <img src="https://resource.logitechg.com/w_692,c_lpad,ar_4:3,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/pro-wireless-gaming-mouse/pro-wireless-carbon-gallery-3.png?v=1" alt="Logitech G Pro Wireless">
-                <h3>Logitech G Pro Wireless</h3>
-                <p>Ergonomic Design | Long Battery Life | High Precision Sensor</p>
-                <button class="add-to-cart" data-name="Logitech G Pro Wireless" data-price="120.00">Add to Cart</button>
+        <section id="mice">
+            <h2>Mice</h2>
+            <div class="peripheral-grid">
+                <div class="peripheral-item">
+                    <img src="https://resource.logitechg.com/w_692,c_lpad,ar_4:3,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/pro-wireless-gaming-mouse/pro-wireless-carbon-gallery-3.png?v=1" alt="Logitech G Pro Wireless">
+                    <h3>Logitech G Pro Wireless</h3>
+                    <p>Ergonomic Design | Long Battery Life | High Precision Sensor</p>
+                    <button class="add-to-cart" data-name="Logitech G Pro Wireless" data-price="120.00">Add to Cart</button>
+                </div>
+                <div class="peripheral-item">
+                    <img src="https://media.currys.biz/i/currysprod/10252398?$l-large$&fmt=auto" alt="Razer Basilisk X Hyperspeed">
+                    <h3>Razer Basilisk X Hyperspeed</h3>
+                    <p>Dual Mode | Rechargeable Battery | High DPI Sensor</p>
+                    <button class="add-to-cart" data-name="Razer Basilisk X Hyperspeed" data-price="100.00">Add to Cart</button>
+                </div>
             </div>
-            <div class="peripheral-item">
-                <img src="https://media.currys.biz/i/currysprod/10252398?$l-large$&fmt=auto" alt="Razer Basilisk X Hyperspeed">
-                <h3>Razer Basilisk X Hyperspeed</h3>
-                <p>Dual Mode | Rechargeable Battery | High DPI Sensor</p>
-                <button class="add-to-cart" data-name="Razer Basilisk X Hyperspeed" data-price="100.00">Add to Cart</button>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="monitors">
-        <h2>Monitors</h2>
-        <div class="peripheral-grid">
-            <div class="peripheral-item">
-                <img src="https://rbtechngames.com/wp-content/uploads/2021/09/asus_tuf_vg249q_1.jpg" alt="ASUS VG259QM">
-                <h3>ASUS VG259QM</h3>
-                <p>1080p 240Hz | 1ms Response Time | 24 inches | IPS Panel</p>
-                <button class="add-to-cart" data-name="ASUS VG259QM" data-price="300.00">Add to Cart</button>
+        <section id="monitors">
+            <h2>Monitors</h2>
+            <div class="peripheral-grid">
+                <div class="peripheral-item">
+                    <img src="https://rbtechngames.com/wp-content/uploads/2021/09/asus_tuf_vg249q_1.jpg" alt="ASUS VG259QM">
+                    <h3>ASUS VG259QM</h3>
+                    <p>1080p 240Hz | 1ms Response Time | 24 inches | IPS Panel</p>
+                    <button class="add-to-cart" data-name="ASUS VG259QM" data-price="300.00">Add to Cart</button>
+                </div>
+                <div class="peripheral-item">
+                    <img src="https://m.media-amazon.com/images/I/81Nt9GpunTL._AC_UF1000,1000_QL80_.jpg" alt="Dell Alienware AW2721D">
+                    <h3>Dell Alienware AW2721D</h3>
+                    <p>1440p 240Hz | 0.5ms Response Time | 27 inches | IPS Panel</p>
+                    <button class="add-to-cart" data-name="Dell Alienware AW2721D" data-price="600.00">Add to Cart</button>
+                </div>
+                <div class="peripheral-item">
+                    <img src="https://www.lg.com/ae/images/consumer-monitors/md07560569/gallery/D-01.jpg" alt="LG UltraGear 48GQ900">
+                    <h3>LG UltraGear 48GQ900</h3>
+                    <p>4K 120Hz (overclockable to 138Hz) | 0.01ms Response Time | 48 inches | OLED Panel</p>
+                    <button class="add-to-cart" data-name="LG UltraGear 34GP950G-B" data-price="1500.00">Add to Cart</button>
+                </div>
             </div>
-            <div class="peripheral-item">
-                <img src="https://m.media-amazon.com/images/I/81Nt9GpunTL._AC_UF1000,1000_QL80_.jpg" alt="Dell Alienware AW2721D">
-                <h3>Dell Alienware AW2721D</h3>
-                <p>1440p 240Hz | 0.5ms Response Time | 27 inches | IPS Panel</p>
-                <button class="add-to-cart" data-name="Dell Alienware AW2721D" data-price="600.00">Add to Cart</button>
-            </div>
-            <div class="peripheral-item">
-                <img src="https://www.lg.com/ae/images/consumer-monitors/md07560569/gallery/D-01.jpg" alt="LG UltraGear 48GQ900">
-                <h3>LG UltraGear 48GQ900</h3>
-                <p>4K  120Hz (overclockable to 138Hz) | 0.01ms Response Time | 48 inches | OLED Panel</p>
-                <button class="add-to-cart" data-name="LG UltraGear 34GP950G-B" data-price="1500.00">Add to Cart</button>
-            </div>
-        </div>
-    </section>
-</main>
-    <aside class="cart">
+        </section>
+    </main>
+    <aside class="cart" id="cart">
         <h2>Shopping Cart</h2>
         <ul id="cart-items"></ul>
         <button id="clear-cart">Clear Cart</button>
         <button id="checkout">Checkout</button>
     </aside>
-     <script>
+    <script>
         document.addEventListener('DOMContentLoaded', function() {
             const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
             const cartItemsList = document.getElementById('cart-items');
-            const cartTotal = document.getElementById('cart-total');
+            const cartTotal = document.getElementById('cart-total') || { textContent: '0.00' };
 
             // Load cart from local storage
             updateCart();
