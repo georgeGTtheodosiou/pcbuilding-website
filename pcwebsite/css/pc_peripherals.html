@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peripherals</title>
+     <link rel="stylesheet" href="styles.css">
     <style>
         /* Reset default browser styles */
         body, h1, h2, h3, p, ul, li, img, a {
@@ -65,86 +66,114 @@
             margin: auto;
         }
 
-        .peripheral-items {
+        section {
+            margin-bottom: 2rem;
+        }
+
+        .cpu-items {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1rem;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid layout */
+            gap: 1.5rem;
         }
 
-        .peripheral-item {
+        .cpu-item {
+            display: flex;
+            flex-direction: column;
             background: #fff;
-            padding: 1rem;
+            border: 1px solid #ddd;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
+            padding: 1rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .peripheral-item img {
+        .cpu-item img {
             max-width: 100%;
             height: auto;
+            margin-bottom: 1rem;
             border-radius: 8px;
         }
 
-        .peripheral-item h2 {
-            font-size: 1.5rem;
-            margin: 0.5rem 0;
-        }
-
-        .peripheral-item p {
+        .cpu-item h3 {
+            margin-bottom: 0.5rem;
+            color: #333;
             font-size: 1.25rem;
-            margin: 0.5rem 0;
         }
 
-        button.add-to-cart {
-            background: #007BFF;
-            color: #fff;
+        .cpu-item p {
+            margin: 0;
+        }
+
+        .cpu-item button {
+            background-color: #28a745;
+            color: white;
             border: none;
-            padding: 0.5rem 1rem;
-            border-radius: 8px;
+            padding: 5px 10px;
             cursor: pointer;
-            transition: background 0.3s ease;
+            margin-top: 1rem;
         }
 
-        button.add-to-cart:hover {
-            background: #0056b3;
+        .cpu-item button:hover {
+            background-color: #218838;
         }
 
-        /* Cart styling */
-        .cart {
-            background: #fff;
+        /* Footer styling */
+        footer {
+            background: linear-gradient(to right, #333, #555);
+            color: #fff;
+            text-align: center;
             padding: 1rem;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             margin-top: 2rem;
         }
 
-        .cart h2 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
+        /* Responsive design for smaller screens */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+        }
+
+        /* Shopping Cart Styling */
+        #cart {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 20px;
+            background: #fff;
         }
 
         #cart-items {
-            margin-bottom: 1rem;
+            list-style-type: none;
+            padding: 0;
         }
 
         #cart-items li {
-            font-size: 1.25rem;
-            margin-bottom: 0.5rem;
+            margin-bottom: 5px;
         }
 
-        button#clear-cart, button#checkout {
-            background: #FF0000;
-            color: #fff;
+        #clear-cart, #checkout {
+            background-color: #007bff;
+            color: white;
             border: none;
-            padding: 0.5rem 1rem;
-            border-radius: 8px;
+            padding: 5px 10px;
             cursor: pointer;
-            transition: background 0.3s ease;
-            margin-right: 0.5rem;
+            margin-top: 10px;
         }
 
-        button#clear-cart:hover, button#checkout:hover {
-            background: #cc0000;
+        #clear-cart:hover, #checkout:hover {
+            background-color: #0056b3;
+        }
+
+        #clear-cart {
+            background-color: #dc3545;
+        }
+
+        #clear-cart:hover {
+            background-color: #c82333;
         }
     </style>
 </head>
